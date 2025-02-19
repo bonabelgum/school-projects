@@ -1,0 +1,73 @@
+<!--FOR TABLE-->
+{% extends "base.html" %}
+  
+{% block title %}Book List{% endblock title %}
+  
+{% block content %}
+
+ <div class="col-md-12">
+    <style>
+        .btn-purple {
+          background-color: purple;
+          color: white; 
+        }
+     </style>
+
+        <!--span><a href="/addnew" class="btn btn-primary">Add New Book</a></span-->  
+        <div style="margin-top: 20px;">
+            <span><a href="/addnew" class="btn btn-purple">Add New Book</a></span>
+            <!--span><a href="/delete/all" class="btn btn-danger">Delete All Books</a></span-->
+            <span><a href="#" class="btn btn-danger" id="delete-all-books-btn">Delete All Books</a></span>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var deleteAllBooksBtn = document.getElementById('delete-all-books-btn');
+                deleteAllBooksBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var confirmation = confirm("Are you sure you want to delete all books?");
+                    if (confirmation) {
+                        window.location.href = "/delete/all";
+                    }
+                });
+            });
+            </script>
+        
+        <div class="table-responsive">
+            <table id="bootstrapdatatable" class="table table-striped table-bordered" width="100%">
+            <thead>
+                <!--th><input type="checkbox" id="checkall" /></th-->
+                <th>ID</th>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Status</th>
+                <th>Rate</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+                {% for book in books %}  
+                    <tr>  
+                    <!--td><input type="checkbox" class="checkthis" /></td-->
+                    <td>{{ book.id }}</td>  
+                    <td>{{ book.title }}</td>  
+                    <td>{{ book.author }}</td>  
+                    <td>{{ book.genre }}</td>  
+                    <td>{{ book.status }}</td>
+                    <td>{{ book.rate }}</td>
+                    <td><a href="/edit/{{ book.id }}" class="btn btn-purple">Edit</a></td>
+                    <td><a href="#" onclick="confirmDelete({{ book.id }})" class="btn btn-danger">Delete</a></td>  
+                    </tr>  
+                {% endfor %} 
+                </tbody>
+            </table>
+            </div>
+    </div>
+    <script>
+        function confirmDelete(id) {
+            if (confirm("Are you sure you want to delete this book?")) {
+                window.location.href = "/delete/" + id;
+            }
+        }
+    </script>
+{% endblock content %}

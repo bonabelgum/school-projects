@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<title>{% block title %}{% endblock %}</title>
+{% load static %}  
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+<link rel = "stylesheet" type = "text/css" href = "https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css"/> <!--for paging/ searching-->
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+</head> 
+<body>
+<div class="container">
+ <div class="row">
+   <style>
+      .purple-navbar {
+        background-color: purple;
+      }
+      .purple-navbar .navbar-brand {
+        color: white; /* Set font color to white */
+      }
+    </style>
+    <nav class="navbar navbar-expand-lg purple-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/">Reading List</a>
+      </div>
+    </nav>
+   
+    <!--h4>Reading List</h4--> 
+    {% block content %}{% endblock %}
+ </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> <!--for query-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src = "https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script> <!--for paging/ searching-->
+<script>
+   $(document).ready(function() {
+       $('#bootstrapdatatable').DataTable({     
+         "aLengthMenu": [[3, 5, 10, 25, -1], [3, 5, 10, 25, "All"]],
+           "iDisplayLength": 3
+          } 
+       );
+   } );
+   </script> <!--for query-->
+</body> 
+</html>
