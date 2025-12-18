@@ -1,0 +1,78 @@
+<!--FOR ADDING-->
+{% extends "base.html" %}
+  
+{% block title %}Add New Book{% endblock title %}
+  
+{% block content %}
+<div class="col-md-12">    
+    <style>
+        .btn-purple {
+          background-color: purple;
+          color: white; 
+        }
+     </style>
+    <form method="POST" class="post-form" action="/addnew">  
+    {% csrf_token %}  
+    <div class="container">  
+        <div class="col-12">  
+        <h3>Enter Details</h3>  
+        </div>    
+     
+        <div class="mb-3"> 
+            <label>Title:</label>  
+            {{ form.title }}   
+        </div> 
+        <div class="mb-3"> 
+            <label>Author:</label>  
+            {{ form.author }}   
+        </div>  
+        <div class="mb-3"> 
+            <label>Genre:</label>  
+            {{ form.genre }}   
+        </div>
+
+        <!--TESTING-->
+        <!--div id="tags-container">
+            <!Tags will be dynamically added here>
+        </div>
+        <script>
+            // Get the select element
+            const genreSelect = document.getElementById('id_genre');
+            // Add event listener for change event
+            genreSelect.addEventListener('change', function() {
+                const selectedGenre = genreSelect.value;
+                //create a new tag element
+                const tagElement = document.createElement('span');
+                tagElement.classList.add('badge', 'me-1');
+                tagElement.textContent = selectedGenre;
+                tagElement.style.backgroundColor = 'purple';
+                //delete button
+                const deleteButton = document.createElement('button');
+                deleteButton.classList.add('btn', 'btn-sm', 'btn-white', 'ms-1');
+                deleteButton.textContent = 'X';
+                deleteButton.addEventListener('click', function() {
+                    tagElement.remove(); //remove the tags
+                });
+                tagElement.appendChild(deleteButton);
+                document.getElementById('tags-container').appendChild(tagElement);
+            });
+        </script-->
+
+
+        <!--TESTING-->
+
+        <div class="mb-3"> 
+            <label>Status:</label>  
+            {{ form.status }}   
+        </div>
+        <div class="mb-3"> 
+            <label>Rate:</label>  
+            {{ form.rate }}   
+        </div>
+        <div class="mb-3"> 
+            <button type="submit" class="btn btn-purple">Submit</button>    
+        </div> 
+    </div>  
+    </form>  
+</div> 
+{% endblock content %}

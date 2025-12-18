@@ -1,0 +1,1136 @@
+
+
+CREATE TABLE `inout` (
+  `sl` int NOT NULL,
+  `cardnumber` varchar(30) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `gender` varchar(20) NOT NULL,
+  `date` date NOT NULL,
+  `entry` time NOT NULL,
+  `exit` time NOT NULL DEFAULT '00:00:00',
+  `status` varchar(10) NOT NULL,
+  `loc` varchar(100) NOT NULL DEFAULT '',
+  `cc` varchar(100) NOT NULL DEFAULT '',
+  `branch` varchar(100) NOT NULL DEFAULT '',
+  `sort1` varchar(30) NOT NULL DEFAULT '',
+  `sort2` varchar(30) NOT NULL DEFAULT '',
+  `email` varchar(30) NOT NULL DEFAULT '',
+  `mob` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`sl`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `inout` VALUES("1","1","","","2022-11-23","10:22:20","18:30:00","IN","MC-Library","Staff","Midway","","","","");
+INSERT INTO `inout` VALUES("2","104","Mr Neroeh Franz Ravis","M","2022-11-23","10:22:57","14:52:59","OUT","MC-Library","Staff","Main Library","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("3","123","Mr Rene Remoroza","M","2022-11-23","10:32:34","10:32:45","OUT","MC MAIN LIBRARY","Staff","Union","","","","");
+INSERT INTO `inout` VALUES("4","104","Mr Neroeh Franz Ravis","M","2022-11-23","14:52:59","14:53:17","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("5","104","Mr Neroeh Franz Ravis","M","2022-11-23","14:53:26","14:55:34","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("6","104","Mr Neroeh Franz Ravis","M","2022-11-23","14:55:34","14:55:50","OUT","MC HIGH SCHOOL LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("7","090000"," John Virgel Lo","","2022-11-24","08:43:20","08:44:24","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("8","104","Mr Neroeh Franz Ravis","M","2022-11-24","08:45:07","17:00:00","IN","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("9","090000"," John Virgel Lo","","2022-11-24","06:51:49","06:54:32","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("10","090000"," John Virgel Lo","","2022-11-24","08:32:49","08:33:24","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("11","090000"," John Virgel Lo","","2022-11-24","08:33:39","08:50:56","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("12","153","Mr CBAA CBAA","","2022-11-24","08:43:49","10:19:33","OUT","MC MAIN LIBRARY","College Of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("13","147"," sdxc saada","","2022-11-24","09:11:20","09:13:39","OUT","MC MAIN LIBRARY","Grade 10","MC HIGH SCHOOL LIBRARY","","","","");
+INSERT INTO `inout` VALUES("14","147"," sdxc saada","","2022-11-24","09:13:39","09:15:17","OUT","MC HIGH SCHOOL LIBRARY","Grade 10","MC HIGH SCHOOL LIBRARY","","","","");
+INSERT INTO `inout` VALUES("15","090000"," John Virgel Lo","","2022-11-24","10:17:17","10:20:36","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("16","153","Mr CBAA CBAA","","2022-11-24","10:19:33","10:19:58","OUT","MC HIGH SCHOOL LIBRARY","College Of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("17","090000"," John Virgel Lo","","2022-11-24","12:52:15","10:52:53","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("18","090000"," John Virgel Lo","","2022-11-24","10:52:53","11:16:29","OUT","MC HIGH SCHOOL LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("19","090000"," John Virgel Lo","","2022-11-24","11:22:17","11:26:49","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("20","153","Mr CBAA CBAA","","2022-11-24","11:27:04","11:53:19","OUT","MC MAIN LIBRARY","College Of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("21","090000"," John Virgel Lo","","2022-11-24","11:46:40","11:53:13","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("22","147"," sdxc saada","","2022-11-24","11:47:57","17:00:00","IN","MC MAIN LIBRARY","Grade 10","MC HIGH SCHOOL LIBRARY","","","","");
+INSERT INTO `inout` VALUES("23","090000"," John Virgel Lo","","2022-11-24","12:04:34","17:00:00","IN","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("24","104","Mr Neroeh Franz Ravis","M","2022-11-28","06:47:28","06:47:50","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("25","104","Mr Neroeh Franz Ravis","M","2022-11-28","06:48:47","08:18:22","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("26","104","Mr Neroeh Franz Ravis","M","2022-11-28","08:18:42","11:04:13","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("27","104","Mr Neroeh Franz Ravis","M","2022-11-28","11:30:07","11:55:15","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("28","090000"," John Virgel Lo","","2022-11-28","15:57:49","15:58:09","OUT","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("29","153","Mr CBAA CBAA","","2022-11-28","16:06:23","16:06:43","OUT","MC MAIN LIBRARY","College Of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("30","090000"," John Virgel Lo","","2022-11-28","16:06:34","17:00:00","IN","MC MAIN LIBRARY","Patron"," MC MAIN LIBRARY","","","jvlo@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("31","104","Mr Neroeh Franz Ravis","M","2022-11-28","16:11:54","16:14:40","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("32","104","Mr Neroeh Franz Ravis","M","2022-11-28","16:53:11","00:00:00","IN","","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("33","104","Mr Neroeh Franz Ravis","M","2022-11-29","08:27:04","08:34:10","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("34","104","Mr Neroeh Franz Ravis","M","2022-12-01","13:46:01","13:46:16","OUT","","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("35","104","Mr Neroeh Franz Ravis","M","2022-12-01","13:46:16","13:47:21","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("36","104","Mr Neroeh Franz Ravis","M","2023-01-10","11:45:25","17:00:00","IN","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("37","104","Mr Neroeh Franz Ravis","M","2023-01-23","08:57:54","17:00:00","IN","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("38","182525"," Kenn Jasper Ababa","","2023-01-23","11:32:48","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("39","220224"," Mary Angelique Abad","","2023-01-23","15:56:53","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("40","222776"," Laurence Santiago","","2023-01-23","16:13:48","16:16:42","OUT","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("41","223067"," Ronel Canicula","","2023-01-23","16:18:53","17:00:00","IN","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("42","223439"," Christian Azares","","2023-01-23","16:30:53","17:00:00","IN","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("43","222434"," Angelene Abuyo","","2023-01-23","16:31:05","17:00:00","IN","MC MAIN LIBRARY","Staff"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("44","190579"," Jhon Carlo Abanes","","2023-01-26","13:37:41","13:37:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9079180029");
+INSERT INTO `inout` VALUES("45","191348"," Dencel Rose Barrameda","","2023-01-26","13:40:22","13:40:33","OUT","Master","College of Nursing and Midwifery","NURSING LIBRARY","","","","9650922351");
+INSERT INTO `inout` VALUES("46","104","Mr Neroeh Franz Ravis","M","2023-01-26","13:40:45","13:48:32","OUT","Master","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("47","191715"," Yasmin Ampaso","","2023-01-26","13:48:21","13:51:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9108664889");
+INSERT INTO `inout` VALUES("48","104","Mr Neroeh Franz Ravis","M","2023-01-26","13:48:32","17:00:00","IN","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("49","191715","Ms Yasmin Ampaso","F","2023-01-26","13:51:14","13:53:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9108664889");
+INSERT INTO `inout` VALUES("50","191715","Ms Yasmin Ampaso","F","2023-01-26","13:57:35","17:00:00","IN","Master","College of Nursing and Midwifery","NURSING LIBRARY","","","","9108664889");
+INSERT INTO `inout` VALUES("51","223067"," Ronel Canicula","","2023-01-26","14:00:14","14:04:32","OUT","MC MAIN LIBRARY","STUDENT"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("52","90156"," Erma Grace Tychingco","","2023-01-26","14:48:14","14:48:40","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9480925722");
+INSERT INTO `inout` VALUES("53","90156"," Erma Grace Tychingco","","2023-01-26","14:48:40","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9480925722");
+INSERT INTO `inout` VALUES("54","190246"," Noelyn Blas","","2023-01-26","14:49:29","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9279216380");
+INSERT INTO `inout` VALUES("55","190347"," Lancelle May Espinosa","","2023-01-26","15:16:28","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9956149253");
+INSERT INTO `inout` VALUES("56","190256"," Chelo Marie Marqueses","","2023-01-26","15:26:39","17:00:00","IN","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("57","191039"," Jan Nicole España","","2023-01-26","15:27:30","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9380422889");
+INSERT INTO `inout` VALUES("58","190039"," Marjorie Casiano","","2023-01-26","15:28:33","17:00:00","IN","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("59","223971"," Maylyn Fulgueras","","2023-01-26","15:29:21","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9173125359");
+INSERT INTO `inout` VALUES("60","221892"," Cassandra Annajean Ferrer","","2023-01-26","15:29:57","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9564206355");
+INSERT INTO `inout` VALUES("61","191726"," Erizza Carranceja","","2023-01-26","16:35:06","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9203277539");
+INSERT INTO `inout` VALUES("62","221298"," Renieze Ella","","2023-01-26","16:44:24","16:45:14","OUT","Master","College of Nursing and Midwifery","NURSING LIBRARY","","","","9708032392");
+INSERT INTO `inout` VALUES("63","221298"," Renieze Ella","","2023-01-26","16:49:01","16:50:25","OUT","Master","College of Nursing and Midwifery","NURSING LIBRARY","","","","9708032392");
+INSERT INTO `inout` VALUES("64","221298"," Renieze Ella","","2023-01-26","16:52:44","16:53:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9708032392");
+INSERT INTO `inout` VALUES("65","221298"," Renieze Ella","","2023-01-26","16:54:03","16:55:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9708032392");
+INSERT INTO `inout` VALUES("66","221298"," Renieze Ella","","2023-01-26","16:55:44","00:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9708032392");
+INSERT INTO `inout` VALUES("67","221901"," Jesherel Albis","","2023-01-27","13:42:04","13:42:34","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("68","221901"," Jesherel Albis","","2023-01-27","13:42:34","15:54:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("69","222305"," Hannah Adan","","2023-01-27","13:48:50","15:30:09","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9083038505");
+INSERT INTO `inout` VALUES("70","200300"," Charles Jordan Bawanan","","2023-01-27","14:06:15","15:54:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9105636778");
+INSERT INTO `inout` VALUES("71","222537"," Ruth Lavarro","","2023-01-27","14:09:29","14:14:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9054166629");
+INSERT INTO `inout` VALUES("72","222619"," Mariella Ruales","","2023-01-27","14:09:42","14:13:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9686263634");
+INSERT INTO `inout` VALUES("73","222653"," Diana Rose Bautista","","2023-01-27","14:09:56","14:13:54","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9291756262");
+INSERT INTO `inout` VALUES("74","222324"," Mica Vista","","2023-01-27","14:10:12","14:14:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9515285427");
+INSERT INTO `inout` VALUES("75","222684"," Matthew Ismael Moral","","2023-01-27","14:10:30","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9286580943");
+INSERT INTO `inout` VALUES("76","221642"," John Michael Gasis","","2023-01-27","14:25:06","15:54:23","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9463337346");
+INSERT INTO `inout` VALUES("77","222258"," Chammie Asido","","2023-01-27","14:36:16","15:02:04","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9289891477");
+INSERT INTO `inout` VALUES("78","222642"," Shine Chai Peru","","2023-01-27","14:36:32","15:02:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9636737537");
+INSERT INTO `inout` VALUES("79","222505"," Marry Mel Gonzales","","2023-01-27","14:36:38","15:02:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9161602906");
+INSERT INTO `inout` VALUES("80","200321"," Diana Paloma Dela Cruz","","2023-01-27","16:15:48","16:37:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","+63 950 347 2376");
+INSERT INTO `inout` VALUES("81","200571"," Nikki Maxine Memije","","2023-01-27","16:15:59","16:38:04","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9558173751");
+INSERT INTO `inout` VALUES("82","211375"," Angelo Noe","","2023-01-28","10:44:58","10:45:23","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9638412779");
+INSERT INTO `inout` VALUES("83","211375"," Angelo Noe","","2023-01-28","10:45:23","10:51:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9638412779");
+INSERT INTO `inout` VALUES("84","221764"," Patricia Joy Montes","","2023-01-28","11:33:08","11:59:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9634457570");
+INSERT INTO `inout` VALUES("85","223135"," Shiela May Alcayde","","2023-01-28","11:33:41","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9669802961");
+INSERT INTO `inout` VALUES("86","221922"," Mikee Anazette Abad","","2023-01-28","11:33:54","12:00:12","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9665284101");
+INSERT INTO `inout` VALUES("87","152702"," Shaira Daniela Gilana","","2023-01-28","14:31:51","00:00:00","IN","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9073418831");
+INSERT INTO `inout` VALUES("88","200435"," Alyssa Abihay","","2023-01-28","14:37:24","14:53:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9510697433");
+INSERT INTO `inout` VALUES("89","192815"," Clarence Jethro Adea","","2023-01-28","14:37:36","14:53:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9770569783");
+INSERT INTO `inout` VALUES("90","222621"," Renelyn Banga","","2023-01-28","14:37:52","14:53:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9105285625");
+INSERT INTO `inout` VALUES("91","222974"," Jhon Mheayeer Estares","","2023-01-28","14:38:04","14:53:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198616823");
+INSERT INTO `inout` VALUES("92","222506"," Loise Bamba","","2023-01-28","14:53:54","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9632288277");
+INSERT INTO `inout` VALUES("93","221892"," Cassandra Annajean Ferrer","","2023-01-30","08:58:54","11:01:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9564206355");
+INSERT INTO `inout` VALUES("94","223573"," Katrina Magana","","2023-01-30","08:59:15","11:01:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9485034982");
+INSERT INTO `inout` VALUES("95","222399"," Regimae Bartolome","","2023-01-30","08:59:38","10:59:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9090224543");
+INSERT INTO `inout` VALUES("96","223224"," Jerain Lei Bustria","","2023-01-30","09:16:20","10:56:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639503715701");
+INSERT INTO `inout` VALUES("97","200411"," Jessa Bardon","","2023-01-30","09:16:33","10:58:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9762018786");
+INSERT INTO `inout` VALUES("98","211984"," John Lowie Balon","","2023-01-30","09:16:51","10:56:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9483620090");
+INSERT INTO `inout` VALUES("99","220772"," Jessa Marie Cornito","","2023-01-30","09:17:06","10:04:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9388980161");
+INSERT INTO `inout` VALUES("100","221233"," Sofia Trixia Delovino","","2023-01-30","09:17:42","10:03:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9511457574");
+INSERT INTO `inout` VALUES("101","221873"," Afril Jean Cadag","","2023-01-30","09:18:25","10:04:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9081985077");
+INSERT INTO `inout` VALUES("102","161269"," Fergare Shane Bolalin","","2023-01-30","09:18:40","10:59:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9630216703");
+INSERT INTO `inout` VALUES("103","220630"," Dherelyn Base","","2023-01-30","09:19:04","10:59:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9164671008");
+INSERT INTO `inout` VALUES("104","221055"," Kayte Andrea Odi","","2023-01-30","09:19:17","10:29:04","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9632264027");
+INSERT INTO `inout` VALUES("105","221894"," Maureen Chelsey Rieza","","2023-01-30","09:19:31","10:28:41","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9369903119");
+INSERT INTO `inout` VALUES("106","221084"," Kyla Canaria","","2023-01-30","09:20:08","10:03:43","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639070624307");
+INSERT INTO `inout` VALUES("107","222305"," Hannah Adan","","2023-01-30","09:20:49","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9083038505");
+INSERT INTO `inout` VALUES("108","221177"," Lady Lyrencee Joy Avila","","2023-01-30","09:21:06","10:58:25","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9484653974");
+INSERT INTO `inout` VALUES("109","220897"," Sarah Balce","","2023-01-30","09:21:19","10:57:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9127217165");
+INSERT INTO `inout` VALUES("110","221976"," Alyssa Guia Baguio","","2023-01-30","09:21:42","10:58:07","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9566622492");
+INSERT INTO `inout` VALUES("111","200377"," Judy Rose Amandy","","2023-01-30","09:21:56","10:57:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9353557623");
+INSERT INTO `inout` VALUES("112","161184"," Ednette Joyce Abogado","","2023-01-30","09:22:51","09:23:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9675474670");
+INSERT INTO `inout` VALUES("113","161184"," Ednette Joyce Abogado","","2023-01-30","09:23:31","10:57:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9675474670");
+INSERT INTO `inout` VALUES("114","161182"," Noren Palma","","2023-01-30","09:31:29","12:54:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9154697347");
+INSERT INTO `inout` VALUES("115","222155"," Kate Stephannie Ogmar","","2023-01-30","09:31:45","12:54:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9690277315");
+INSERT INTO `inout` VALUES("116","221875"," Charmen Rose Palillo","","2023-01-30","09:32:00","10:05:01","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","93915157636");
+INSERT INTO `inout` VALUES("117","200346"," Amea Syra Ojo","","2023-01-30","09:32:20","10:04:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9086270968");
+INSERT INTO `inout` VALUES("118","222177"," Cielo Mae Pacay","","2023-01-30","09:32:34","10:04:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9103099772");
+INSERT INTO `inout` VALUES("119","222097"," Mary Joy Paquita","","2023-01-30","09:32:48","10:04:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9185242625");
+INSERT INTO `inout` VALUES("120","161206"," Angeline Palmones","","2023-01-30","09:33:01","10:05:12","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9182594885");
+INSERT INTO `inout` VALUES("121","222119"," Meek Joshpher Bellen","","2023-01-30","09:35:07","10:05:31","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9488295487");
+INSERT INTO `inout` VALUES("122","222145"," Dave Hanz Bartolome","","2023-01-30","09:35:21","10:05:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9974611406");
+INSERT INTO `inout` VALUES("123","222150"," Lemuel Clacio","","2023-01-30","09:40:55","10:03:23","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9973076860");
+INSERT INTO `inout` VALUES("124","222094"," Kaye Contreras","","2023-01-30","09:41:10","10:03:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9272076539");
+INSERT INTO `inout` VALUES("125","152702"," Shaira Daniela Gilana","","2023-01-30","10:10:51","10:18:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9073418831");
+INSERT INTO `inout` VALUES("126","200321"," Diana Paloma Dela Cruz","","2023-01-30","10:11:07","10:18:55","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","+63 950 347 2376");
+INSERT INTO `inout` VALUES("127","222324"," Mica Vista","","2023-01-30","10:56:14","10:56:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9515285427");
+INSERT INTO `inout` VALUES("128","221901"," Jesherel Albis","","2023-01-30","11:51:19","13:26:20","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("129","221271"," Jon Leonel Rustique","","2023-01-30","12:01:02","12:23:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9090633782");
+INSERT INTO `inout` VALUES("130","222118"," Kein Joshua Villaflores","","2023-01-30","12:01:08","12:32:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9089202693");
+INSERT INTO `inout` VALUES("131","221584"," Janel Senis","","2023-01-30","12:01:13","12:28:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9703086647");
+INSERT INTO `inout` VALUES("132","222186"," Daniella Villacrusis","","2023-01-30","12:01:32","12:33:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9481466917");
+INSERT INTO `inout` VALUES("133","222250"," Mc Clure Mariel Yanto","","2023-01-30","12:01:36","12:28:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639925941703");
+INSERT INTO `inout` VALUES("134","221958"," Abdel Ezekiel Pilapil","","2023-01-30","13:04:22","16:09:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("135","221901"," Jesherel Albis","","2023-01-30","13:26:20","13:26:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("136","221901"," Jesherel Albis","","2023-01-30","13:26:38","15:04:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("137","221642"," John Michael Gasis","","2023-01-30","13:29:53","15:04:07","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9463337346");
+INSERT INTO `inout` VALUES("138","200300"," Charles Jordan Bawanan","","2023-01-30","13:48:40","15:03:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9105636778");
+INSERT INTO `inout` VALUES("139","222022"," Mariel Paway","","2023-01-30","13:49:35","15:10:38","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9505000574");
+INSERT INTO `inout` VALUES("140","222024"," Francheska Andrea Del Rosario","","2023-01-30","13:49:50","15:10:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9608612896");
+INSERT INTO `inout` VALUES("141","152630"," Katrina Muring","","2023-01-30","14:12:34","14:23:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9285915671");
+INSERT INTO `inout` VALUES("142","221665"," Ira Nyca Noga","","2023-01-30","14:13:52","16:43:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9098065378");
+INSERT INTO `inout` VALUES("143","210956"," Rossbee Jordas","","2023-01-30","14:14:58","14:23:00","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9509286619");
+INSERT INTO `inout` VALUES("144","210935"," Kristelle Nicole Jamito","","2023-01-30","14:15:05","14:23:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9081833689");
+INSERT INTO `inout` VALUES("145","210581"," Mary France Narvasa","","2023-01-30","14:15:10","14:22:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9618090395");
+INSERT INTO `inout` VALUES("146","210412"," Marinel Jardin","","2023-01-30","14:15:16","14:23:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9506680078");
+INSERT INTO `inout` VALUES("147","210370"," Catherine Joy Lanorio","","2023-01-30","14:15:43","14:23:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9750975681");
+INSERT INTO `inout` VALUES("148","192794"," Kian Angelo Macuha","","2023-01-30","14:16:05","14:22:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9125784074");
+INSERT INTO `inout` VALUES("149","212104"," Francis James Latoza","","2023-01-30","14:16:17","14:23:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9056090354");
+INSERT INTO `inout` VALUES("150","210300"," Leonard Diezmo","","2023-01-30","14:16:32","14:24:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9103561864");
+INSERT INTO `inout` VALUES("151","210644"," Trixia Jane Co","","2023-01-30","14:28:30","14:28:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9456827414");
+INSERT INTO `inout` VALUES("152","210644"," Trixia Jane Co","","2023-01-30","14:29:13","15:41:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9456827414");
+INSERT INTO `inout` VALUES("153","210662"," Valerie Del Monte","","2023-01-30","14:29:39","15:41:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9956218343");
+INSERT INTO `inout` VALUES("154","210621"," Hazel Carrascal","","2023-01-30","14:29:45","15:42:25","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9567562267");
+INSERT INTO `inout` VALUES("155","210711"," Ma. Tonette Del Pilar","","2023-01-30","14:29:59","15:42:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9102288181");
+INSERT INTO `inout` VALUES("156","192766"," Kyrvi Camus","","2023-01-30","14:39:41","15:42:01","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9554639253");
+INSERT INTO `inout` VALUES("157","192672"," Lysa Gabriela Bress","","2023-01-30","14:40:01","15:42:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9154051418");
+INSERT INTO `inout` VALUES("158","152702"," Shaira Daniela Gilana","","2023-01-30","14:57:45","16:03:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9073418831");
+INSERT INTO `inout` VALUES("159","200321"," Diana Paloma Dela Cruz","","2023-01-30","14:57:51","16:04:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","+63 950 347 2376");
+INSERT INTO `inout` VALUES("160","222175"," Mia Shane Dela Rosa","","2023-01-30","14:58:09","16:04:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9467401494");
+INSERT INTO `inout` VALUES("161","221338"," Anna Joy Garchitorena","","2023-01-30","14:58:26","16:03:50","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9056686808");
+INSERT INTO `inout` VALUES("162","222380"," Jinalyn Garduque","","2023-01-30","14:58:43","16:04:11","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9656027074");
+INSERT INTO `inout` VALUES("163","222254"," Marianne Zechaia Estacio","","2023-01-30","14:58:48","16:03:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9187276146");
+INSERT INTO `inout` VALUES("164","223298"," Christian Garcera","","2023-01-30","14:58:54","16:04:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9202335062");
+INSERT INTO `inout` VALUES("165","222221"," Joyce Allen Ellaga","","2023-01-30","14:59:06","16:04:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9055754804");
+INSERT INTO `inout` VALUES("166","222974"," Jhon Mheayeer Estares","","2023-01-30","15:10:27","16:01:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198616823");
+INSERT INTO `inout` VALUES("167","221892"," Cassandra Annajean Ferrer","","2023-01-30","15:19:04","16:01:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9564206355");
+INSERT INTO `inout` VALUES("168","200553"," Nichole Nette Laceda","","2023-01-30","15:19:57","16:02:54","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9124034479");
+INSERT INTO `inout` VALUES("169","210300"," Leonard Diezmo","","2023-01-30","15:23:40","16:24:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9103561864");
+INSERT INTO `inout` VALUES("170","211312"," Mariel Gadil","","2023-01-30","15:24:00","16:03:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9319826445");
+INSERT INTO `inout` VALUES("171","222340"," Yvhonne Guevarra","","2023-01-30","16:02:11","16:02:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9704921037");
+INSERT INTO `inout` VALUES("172","223077"," Princess Yvonne Alcantara","","2023-01-30","16:22:29","16:44:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9918559471");
+INSERT INTO `inout` VALUES("173","211449"," Emerald Isle Dela Paz","","2023-01-31","08:29:08","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9487372844");
+INSERT INTO `inout` VALUES("174","210808"," Edna Diezmo","","2023-01-31","08:29:27","11:06:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9055015993");
+INSERT INTO `inout` VALUES("175","210545"," Sophia Dela Torre","","2023-01-31","08:29:34","11:05:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9466992307");
+INSERT INTO `inout` VALUES("176","210543"," Jasmine Joy Fria","","2023-01-31","08:29:53","11:06:11","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9662755662");
+INSERT INTO `inout` VALUES("177","193180"," Rica Mae Escamillas","","2023-01-31","08:30:10","11:09:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9617874726");
+INSERT INTO `inout` VALUES("178","211272"," Nathaniel Del Rosario","","2023-01-31","08:30:16","11:05:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9515382436");
+INSERT INTO `inout` VALUES("179","212051"," Jasmine Devesa","","2023-01-31","08:30:34","11:10:02","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9465633384");
+INSERT INTO `inout` VALUES("180","211092"," Kristel Joy Delos Santos","","2023-01-31","08:31:05","11:09:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9773292330");
+INSERT INTO `inout` VALUES("181","200302"," Nicole Ibita","","2023-01-31","08:36:01","09:58:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9385157067");
+INSERT INTO `inout` VALUES("182","210368"," Stefanie De Vera","","2023-01-31","08:38:44","11:10:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9093275857");
+INSERT INTO `inout` VALUES("183","210383"," Julia De Belen","","2023-01-31","08:39:00","11:09:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9511116682");
+INSERT INTO `inout` VALUES("184","181257"," Kate Subel Ordinario","","2023-01-31","08:46:59","11:12:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9126296771");
+INSERT INTO `inout` VALUES("185","223321"," Catherine Palma","","2023-01-31","08:57:20","10:47:09","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9074380436");
+INSERT INTO `inout` VALUES("186","220629"," Denise Joy Olit","","2023-01-31","08:57:36","10:47:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9679256970");
+INSERT INTO `inout` VALUES("187","220870"," Cielo Grace Pellazo","","2023-01-31","08:57:43","10:46:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9569608251");
+INSERT INTO `inout` VALUES("188","211468"," Francine Sandara Osio","","2023-01-31","08:58:01","10:32:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9704682222");
+INSERT INTO `inout` VALUES("189","222151"," Princess Sheila Pajarillo","","2023-01-31","08:58:18","10:33:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519044901");
+INSERT INTO `inout` VALUES("190","221895"," Lorena Diana Oresca","","2023-01-31","08:58:30","10:32:38","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9106046706");
+INSERT INTO `inout` VALUES("191","222193"," Lysandra Pioquinto","","2023-01-31","08:58:41","10:33:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9997806300");
+INSERT INTO `inout` VALUES("192","221958"," Abdel Ezekiel Pilapil","","2023-01-31","08:58:52","10:50:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("193","221892"," Cassandra Annajean Ferrer","","2023-01-31","09:18:09","09:53:55","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9564206355");
+INSERT INTO `inout` VALUES("194","221298"," Renieze Ella","","2023-01-31","09:28:21","10:32:50","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9708032392");
+INSERT INTO `inout` VALUES("195","200265"," Camille Cuaño","","2023-01-31","09:39:47","10:51:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9616667827");
+INSERT INTO `inout` VALUES("196","222196"," Michael Joshua Casallos","","2023-01-31","09:39:58","10:51:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9098083242");
+INSERT INTO `inout` VALUES("197","221977"," Bianca Mae Bataller","","2023-01-31","09:46:33","10:51:50","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9292708092");
+INSERT INTO `inout` VALUES("198","221165"," Lindsey Mharie Ponayo","","2023-01-31","09:50:44","10:34:02","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9065664764");
+INSERT INTO `inout` VALUES("199","222188"," Karl Lester Tabalan","","2023-01-31","09:50:55","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9319941219");
+INSERT INTO `inout` VALUES("200","200871"," John Patrick Tungol","","2023-01-31","09:51:11","10:36:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9218453381");
+INSERT INTO `inout` VALUES("201","200233"," Guien Anrei Basanta","","2023-01-31","09:52:30","10:53:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9301469623");
+INSERT INTO `inout` VALUES("202","222290"," Mary Joy Consuelo","","2023-01-31","09:52:51","10:54:12","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639630097476");
+INSERT INTO `inout` VALUES("203","161221"," Mary Grace De Quiros","","2023-01-31","09:53:06","10:54:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","(054) 875 5494");
+INSERT INTO `inout` VALUES("204","222015"," Rosemarie Ann Yao","","2023-01-31","09:53:12","10:37:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","0995 160 3551");
+INSERT INTO `inout` VALUES("205","220676"," Suzette Tan","","2023-01-31","09:53:50","10:33:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9319632317");
+INSERT INTO `inout` VALUES("206","200849"," Christelle Sena","","2023-01-31","09:54:11","10:33:04","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9203280145");
+INSERT INTO `inout` VALUES("207","222261"," Dahlia Soriano","","2023-01-31","09:56:55","10:37:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9455347396");
+INSERT INTO `inout` VALUES("208","223106"," Mea Rose Marie Santiago","","2023-01-31","09:57:09","10:37:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9455334235");
+INSERT INTO `inout` VALUES("209","222386"," Kent Christian Balasta","","2023-01-31","09:57:56","12:00:31","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9669813230");
+INSERT INTO `inout` VALUES("210","202222"," Rica Balon","","2023-01-31","09:58:10","11:59:43","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9096891056");
+INSERT INTO `inout` VALUES("211","222871"," May Gabrielle Rodolfo","","2023-01-31","10:15:01","12:00:50","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9636575972");
+INSERT INTO `inout` VALUES("212","222151"," Princess Sheila Pajarillo","","2023-01-31","11:14:11","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519044901");
+INSERT INTO `inout` VALUES("213","200283"," Jan Benedict Mitch Almira","","2023-01-31","11:14:17","12:00:03","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9508686778");
+INSERT INTO `inout` VALUES("214","202222"," Rica Balon","","2023-01-31","11:59:43","12:00:20","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9096891056");
+INSERT INTO `inout` VALUES("215","202222"," Rica Balon","","2023-01-31","12:00:20","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9096891056");
+INSERT INTO `inout` VALUES("216","222871"," May Gabrielle Rodolfo","","2023-01-31","13:00:44","13:01:04","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9636575972");
+INSERT INTO `inout` VALUES("217","222871"," May Gabrielle Rodolfo","","2023-01-31","13:01:04","13:33:08","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9636575972");
+INSERT INTO `inout` VALUES("218","223431"," Hannah Mae Aguenza","","2023-01-31","13:11:58","16:32:52","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9512922184");
+INSERT INTO `inout` VALUES("219","201189"," Xyra Villagarcia","","2023-01-31","13:12:12","13:32:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9384514589");
+INSERT INTO `inout` VALUES("220","220955"," Rhea Lorraine Lim","","2023-01-31","13:12:18","13:32:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9464218400");
+INSERT INTO `inout` VALUES("221","200300"," Charles Jordan Bawanan","","2023-01-31","13:28:30","13:41:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9105636778");
+INSERT INTO `inout` VALUES("222","221929"," Cherry Joy Bas","","2023-01-31","13:29:00","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9092561586");
+INSERT INTO `inout` VALUES("223","210904"," Heleina Jann Pardo","","2023-01-31","13:29:15","14:36:02","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9108427977");
+INSERT INTO `inout` VALUES("224","221958"," Abdel Ezekiel Pilapil","","2023-01-31","13:29:31","16:53:07","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("225","221878"," Kyla Padua","","2023-01-31","14:29:05","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9518972806");
+INSERT INTO `inout` VALUES("226","221890"," Edelyn Canabe","","2023-01-31","14:30:15","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9694455299");
+INSERT INTO `inout` VALUES("227","200303"," Wesley Clacio","","2023-01-31","15:20:04","15:20:30","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9308551007");
+INSERT INTO `inout` VALUES("228","200303"," Wesley Clacio","","2023-01-31","15:20:30","16:57:00","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9308551007");
+INSERT INTO `inout` VALUES("229","200300"," Charles Jordan Bawanan","","2023-01-31","15:20:46","16:57:11","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9105636778");
+INSERT INTO `inout` VALUES("230","161242"," Illysah Jane Cordero","","2023-01-31","15:21:05","16:56:00","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9485044998");
+INSERT INTO `inout` VALUES("231","222034"," Janna Althea Cana","","2023-01-31","15:21:18","15:21:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9122344272");
+INSERT INTO `inout` VALUES("232","201969"," Shaine Nicole Capin","","2023-01-31","15:21:40","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9637758926");
+INSERT INTO `inout` VALUES("233","221527"," Farrah Jazei Dolor","","2023-01-31","15:21:57","15:22:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9274670531");
+INSERT INTO `inout` VALUES("234","221908"," John Lloyd Dando","","2023-01-31","15:22:32","16:58:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9663944448");
+INSERT INTO `inout` VALUES("235","191912"," Ivy Requinta","","2023-01-31","15:24:19","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9772163457");
+INSERT INTO `inout` VALUES("236","201086"," Eunice Yebra","","2023-01-31","16:09:19","16:09:32","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9957212511");
+INSERT INTO `inout` VALUES("237","201086"," Eunice Yebra","","2023-01-31","16:09:32","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9957212511");
+INSERT INTO `inout` VALUES("238","222416"," Kris Cyroselyn Tychingco","","2023-01-31","16:09:59","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9205665021");
+INSERT INTO `inout` VALUES("239","211984"," John Lowie Balon","","2023-01-31","16:15:47","16:22:54","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9483620090");
+INSERT INTO `inout` VALUES("240","223224"," Jerain Lei Bustria","","2023-01-31","16:15:51","16:23:00","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639503715701");
+INSERT INTO `inout` VALUES("241","193436"," Angelica Rodriguez","","2023-01-31","16:19:37","16:35:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9380521038");
+INSERT INTO `inout` VALUES("242","223221"," Mary Criz San Jose","","2023-01-31","16:19:47","16:35:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9488285349");
+INSERT INTO `inout` VALUES("243","221891"," Allyza Aborde","","2023-01-31","16:30:48","16:30:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9381859790");
+INSERT INTO `inout` VALUES("244","221891"," Allyza Aborde","","2023-01-31","16:31:14","16:57:37","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9381859790");
+INSERT INTO `inout` VALUES("245","221901"," Jesherel Albis","","2023-01-31","16:31:53","16:57:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("246","221950"," John Peter Balane","","2023-01-31","16:32:08","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9567556028");
+INSERT INTO `inout` VALUES("247","222265"," Cyrus Bruno Abitria","","2023-01-31","16:32:20","16:43:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9665974748");
+INSERT INTO `inout` VALUES("248","222069"," Eizel Andaya","","2023-01-31","16:32:25","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9485889524");
+INSERT INTO `inout` VALUES("249","222020"," Layca Adano","","2023-01-31","16:32:38","16:43:12","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9677808657");
+INSERT INTO `inout` VALUES("250","223431"," Hannah Mae Aguenza","","2023-01-31","16:33:03","16:43:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9512922184");
+INSERT INTO `inout` VALUES("251","201189"," Xyra Villagarcia","","2023-01-31","16:42:52","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9384514589");
+INSERT INTO `inout` VALUES("252","221527"," Farrah Jazei Dolor","","2023-01-31","16:57:06","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9274670531");
+INSERT INTO `inout` VALUES("253","221165"," Lindsey Mharie Ponayo","","2023-02-02","08:37:21","09:55:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9065664764");
+INSERT INTO `inout` VALUES("254","223106"," Mea Rose Marie Santiago","","2023-02-02","08:37:28","10:18:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9455334235");
+INSERT INTO `inout` VALUES("255","222188"," Karl Lester Tabalan","","2023-02-02","08:37:43","09:57:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9319941219");
+INSERT INTO `inout` VALUES("256","200871"," John Patrick Tungol","","2023-02-02","08:37:48","09:56:12","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9218453381");
+INSERT INTO `inout` VALUES("257","200849"," Christelle Sena","","2023-02-02","08:37:55","09:06:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9203280145");
+INSERT INTO `inout` VALUES("258","161262"," Romart Jess Amisola","","2023-02-02","08:38:20","10:37:12","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9569034655");
+INSERT INTO `inout` VALUES("259","221734"," Edward Paul Ablao","","2023-02-02","08:39:24","09:46:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519261510");
+INSERT INTO `inout` VALUES("260","220676"," Suzette Tan","","2023-02-02","08:39:29","09:06:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9319632317");
+INSERT INTO `inout` VALUES("261","161314"," Maekyla Abarca","","2023-02-02","08:39:51","10:36:57","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9107286326");
+INSERT INTO `inout` VALUES("262","200283"," Jan Benedict Mitch Almira","","2023-02-02","08:40:04","10:37:38","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9508686778");
+INSERT INTO `inout` VALUES("263","222505"," Marry Mel Gonzales","","2023-02-02","08:40:42","09:22:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9161602906");
+INSERT INTO `inout` VALUES("264","222739"," Annielyn Bermas","","2023-02-02","08:40:56","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9156581255");
+INSERT INTO `inout` VALUES("265","223046"," Faithryl Cereno","","2023-02-02","08:41:18","09:22:39","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9451969007");
+INSERT INTO `inout` VALUES("266","222015"," Rosemarie Ann Yao","","2023-02-02","08:49:44","10:33:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","0995 160 3551");
+INSERT INTO `inout` VALUES("267","222261"," Dahlia Soriano","","2023-02-02","09:06:04","09:55:54","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9455347396");
+INSERT INTO `inout` VALUES("268","142222"," Michael Gabriel Reyes","","2023-02-02","09:06:36","09:55:57","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9278640473");
+INSERT INTO `inout` VALUES("269","221975"," Chelsea Nikki Macho","","2023-02-02","09:06:55","10:36:37","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9477604698");
+INSERT INTO `inout` VALUES("270","221015"," Ronnalyn Badinas","","2023-02-02","09:07:10","10:38:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519101684");
+INSERT INTO `inout` VALUES("271","200586"," Ashley Jade Nolasco","","2023-02-02","09:07:24","10:36:07","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","+63 961 092 5791");
+INSERT INTO `inout` VALUES("272","222063"," Chen-Chen Necesario","","2023-02-02","09:07:44","10:36:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9704905346");
+INSERT INTO `inout` VALUES("273","221750"," Patrisha Mae Mendoza","","2023-02-02","09:08:00","10:36:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9465428096");
+INSERT INTO `inout` VALUES("274","222334"," John Lloyd Aragon","","2023-02-02","09:08:14","10:38:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9569457243");
+INSERT INTO `inout` VALUES("275","221999"," Jannah Allago","","2023-02-02","09:08:41","10:38:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9361307881");
+INSERT INTO `inout` VALUES("276","221734"," Edward Paul Ablao","","2023-02-02","09:56:48","10:38:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519261510");
+INSERT INTO `inout` VALUES("277","222386"," Kent Christian Balasta","","2023-02-02","09:56:59","10:37:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9669813230");
+INSERT INTO `inout` VALUES("278","202222"," Rica Balon","","2023-02-02","09:57:14","10:37:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9096891056");
+INSERT INTO `inout` VALUES("279","222248"," Sophia Nadine Mabeza","","2023-02-02","10:19:01","10:19:12","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9292710911");
+INSERT INTO `inout` VALUES("280","200402"," Erica Christine Ann Montuya","","2023-02-02","10:19:24","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9656411804");
+INSERT INTO `inout` VALUES("281","210635"," Diana Rose Zenarosa","","2023-02-02","10:19:46","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9387892678");
+INSERT INTO `inout` VALUES("282","200302"," Nicole Ibita","","2023-02-02","10:53:28","10:54:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9385157067");
+INSERT INTO `inout` VALUES("283","222188"," Karl Lester Tabalan","","2023-02-02","11:45:19","11:59:52","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9319941219");
+INSERT INTO `inout` VALUES("284","211984"," John Lowie Balon","","2023-02-02","13:08:27","13:08:51","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9483620090");
+INSERT INTO `inout` VALUES("285","211984"," John Lowie Balon","","2023-02-02","13:08:51","16:33:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9483620090");
+INSERT INTO `inout` VALUES("286","202222"," Rica Balon","","2023-02-02","13:37:37","14:45:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9096891056");
+INSERT INTO `inout` VALUES("287","200283"," Jan Benedict Mitch Almira","","2023-02-02","13:37:50","14:45:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9508686778");
+INSERT INTO `inout` VALUES("288","222025"," Abegail Tejada","","2023-02-02","13:38:34","14:04:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639087870973");
+INSERT INTO `inout` VALUES("289","222726"," Marjane Sapatin","","2023-02-02","13:38:47","14:04:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9614950258");
+INSERT INTO `inout` VALUES("290","221958"," Abdel Ezekiel Pilapil","","2023-02-02","13:41:56","13:58:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("291","223224"," Jerain Lei Bustria","","2023-02-02","13:46:26","16:33:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639503715701");
+INSERT INTO `inout` VALUES("292","222974"," Jhon Mheayeer Estares","","2023-02-02","14:02:40","14:39:04","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198616823");
+INSERT INTO `inout` VALUES("293","221892"," Cassandra Annajean Ferrer","","2023-02-02","14:12:08","14:37:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9564206355");
+INSERT INTO `inout` VALUES("294","210367"," Mary Ann Asis","","2023-02-02","14:19:47","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9173174576");
+INSERT INTO `inout` VALUES("295","222606"," John Carlo Amparado","","2023-02-02","14:19:57","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9096343852");
+INSERT INTO `inout` VALUES("296","223573"," Katrina Magana","","2023-02-02","14:28:59","14:37:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9485034982");
+INSERT INTO `inout` VALUES("297","221895"," Lorena Diana Oresca","","2023-02-02","14:30:27","14:38:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9106046706");
+INSERT INTO `inout` VALUES("298","211468"," Francine Sandara Osio","","2023-02-02","14:30:33","14:39:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9704682222");
+INSERT INTO `inout` VALUES("299","221958"," Abdel Ezekiel Pilapil","","2023-02-02","14:30:53","14:35:09","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("300","220629"," Denise Joy Olit","","2023-02-02","14:30:59","14:35:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9679256970");
+INSERT INTO `inout` VALUES("301","220870"," Cielo Grace Pellazo","","2023-02-02","14:31:05","14:33:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9569608251");
+INSERT INTO `inout` VALUES("302","223321"," Catherine Palma","","2023-02-02","14:31:08","14:33:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9074380436");
+INSERT INTO `inout` VALUES("303","222151"," Princess Sheila Pajarillo","","2023-02-02","14:31:20","14:44:39","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519044901");
+INSERT INTO `inout` VALUES("304","222193"," Lysandra Pioquinto","","2023-02-02","14:31:24","14:44:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9997806300");
+INSERT INTO `inout` VALUES("305","212503"," Hannah Jobelle San Diego","","2023-02-02","15:16:36","15:45:47","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9551955318");
+INSERT INTO `inout` VALUES("306","160132"," Janea Moreno","","2023-02-02","15:38:38","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9665311936");
+INSERT INTO `inout` VALUES("307","222374"," Eljeann Montalla","","2023-02-02","15:38:59","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9682916938");
+INSERT INTO `inout` VALUES("308","202321"," Arjay Galero","","2023-02-02","15:43:13","15:56:11","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9667947072");
+INSERT INTO `inout` VALUES("309","210186"," Lorenz Diestro","","2023-02-02","16:03:58","16:57:23","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9164205056");
+INSERT INTO `inout` VALUES("310","193393"," Maria Lyn Rajas","","2023-02-02","16:04:15","16:57:04","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9502022473");
+INSERT INTO `inout` VALUES("311","210716"," Jessa San Diego","","2023-02-02","16:04:43","16:57:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519599586");
+INSERT INTO `inout` VALUES("312","210679"," Julie Anne Ruzol","","2023-02-02","16:04:50","16:57:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9380915085");
+INSERT INTO `inout` VALUES("313","180142"," Marjorie Talanquines","","2023-02-02","16:05:03","16:57:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639568128638");
+INSERT INTO `inout` VALUES("314","223046"," Faithryl Cereno","","2023-02-02","16:46:28","16:56:38","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9451969007");
+INSERT INTO `inout` VALUES("315","222494"," Shane Templonuevo","","2023-02-02","16:46:50","16:56:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9480240449");
+INSERT INTO `inout` VALUES("316","222505"," Marry Mel Gonzales","","2023-02-02","16:46:55","16:56:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9161602906");
+INSERT INTO `inout` VALUES("317","222628"," Martina Pardo","","2023-02-02","16:47:14","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9289598258");
+INSERT INTO `inout` VALUES("318","221958"," Abdel Ezekiel Pilapil","","2023-02-02","16:52:06","16:52:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("319","221929"," Cherry Joy Bas","","2023-02-03","08:34:14","08:54:39","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9092561586");
+INSERT INTO `inout` VALUES("320","221901"," Jesherel Albis","","2023-02-03","08:34:29","08:54:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("321","142227"," Ma. Christine Rene Abanes","","2023-02-03","08:35:43","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9092911326");
+INSERT INTO `inout` VALUES("322","142113"," Alexzandra Crisostomo","","2023-02-03","08:35:58","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9463208006");
+INSERT INTO `inout` VALUES("323","142115"," Miamae Dimas","","2023-02-03","08:38:04","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9283845825");
+INSERT INTO `inout` VALUES("324","152702"," Shaira Daniela Gilana","","2023-02-03","08:39:50","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9073418831");
+INSERT INTO `inout` VALUES("325","210368"," Stefanie De Vera","","2023-02-03","08:40:56","09:51:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9093275857");
+INSERT INTO `inout` VALUES("326","190035"," Kim Suria","","2023-02-03","09:27:22","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9982210408");
+INSERT INTO `inout` VALUES("327","190567"," Matthew Noblefranca","","2023-02-03","09:27:28","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9207792143");
+INSERT INTO `inout` VALUES("328","212051"," Jasmine Devesa","","2023-02-03","09:27:52","09:50:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9465633384");
+INSERT INTO `inout` VALUES("329","131518"," Sochelle Bacer","","2023-02-03","09:54:33","09:58:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9672442325");
+INSERT INTO `inout` VALUES("330","182291"," Rustin Aragon","","2023-02-03","09:54:51","09:57:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9532570474");
+INSERT INTO `inout` VALUES("331","182232"," Justine Bardon","","2023-02-03","09:55:09","09:58:31","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9075032124");
+INSERT INTO `inout` VALUES("332","200330"," Kathleen Millena","","2023-02-03","10:48:06","11:52:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198107716");
+INSERT INTO `inout` VALUES("333","221292"," Jahaziel Ella","","2023-02-03","10:48:17","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9454722338");
+INSERT INTO `inout` VALUES("334","222133"," Mark Ian John Lita","","2023-02-03","10:48:38","11:52:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9656352273");
+INSERT INTO `inout` VALUES("335","222041"," Sean Christoper Holar","","2023-02-03","10:48:45","10:49:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9101862768");
+INSERT INTO `inout` VALUES("336","220632"," Darlene Magas","","2023-02-03","10:49:03","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9157518108");
+INSERT INTO `inout` VALUES("337","221268"," Princess Mecaller","","2023-02-03","10:49:15","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9304054213");
+INSERT INTO `inout` VALUES("338","220747"," Jorem Laviña","","2023-02-03","10:49:29","11:52:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9760471024");
+INSERT INTO `inout` VALUES("339","222041"," Sean Christoper Holar","","2023-02-03","10:49:44","11:52:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9101862768");
+INSERT INTO `inout` VALUES("340","104","Mr Neroeh Franz Ravis","M","2023-02-03","09:16:56","17:00:00","IN","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("341","182209"," Keiala Marie Capistrano","","2023-02-03","12:29:57","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9461476238");
+INSERT INTO `inout` VALUES("342","222974"," Jhon Mheayeer Estares","","2023-02-03","12:43:07","12:48:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198616823");
+INSERT INTO `inout` VALUES("343","221901"," Jesherel Albis","","2023-02-03","13:58:17","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("344","221895"," Lorena Diana Oresca","","2023-02-03","15:00:27","15:31:44","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9106046706");
+INSERT INTO `inout` VALUES("345","221895"," Lorena Diana Oresca","","2023-02-03","15:31:44","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9106046706");
+INSERT INTO `inout` VALUES("346","210947"," Natasha Nolo","","2023-02-03","15:32:53","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9777867747");
+INSERT INTO `inout` VALUES("347","192711"," Samantha Nicole Mendoza","","2023-02-03","15:33:13","15:33:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9465316465");
+INSERT INTO `inout` VALUES("348","192711"," Samantha Nicole Mendoza","","2023-02-03","15:34:00","13:58:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9465316465");
+INSERT INTO `inout` VALUES("349","211386"," Alyssa Althea Requillas","","2023-02-03","15:55:08","16:37:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9454885087");
+INSERT INTO `inout` VALUES("350","211398"," Angel-Lyn Joyce Serrano","","2023-02-03","15:55:23","16:37:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9308385053");
+INSERT INTO `inout` VALUES("351","193340"," Johanna Quintela","","2023-02-03","16:34:39","16:37:52","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9993265081");
+INSERT INTO `inout` VALUES("352","221338"," Anna Joy Garchitorena","","2023-02-04","10:20:54","10:21:08","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9056686808");
+INSERT INTO `inout` VALUES("353","221338"," Anna Joy Garchitorena","","2023-02-04","10:21:08","10:51:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9056686808");
+INSERT INTO `inout` VALUES("354","221338"," Anna Joy Garchitorena","","2023-02-04","10:51:51","11:31:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9056686808");
+INSERT INTO `inout` VALUES("355","104","Mr Neroeh Franz Ravis","M","2023-02-04","11:22:23","11:22:37","OUT","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("356","223077"," Princess Yvonne Alcantara","","2023-02-04","14:18:02","14:19:01","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9918559471");
+INSERT INTO `inout` VALUES("357","223077"," Princess Yvonne Alcantara","","2023-02-04","14:19:01","14:53:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9918559471");
+INSERT INTO `inout` VALUES("358","222175"," Mia Shane Dela Rosa","","2023-02-04","14:19:15","14:54:02","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9467401494");
+INSERT INTO `inout` VALUES("359","220864"," Cindy Brizuela","","2023-02-04","14:19:28","14:54:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9916662803");
+INSERT INTO `inout` VALUES("360","104","Mr Neroeh Franz Ravis","M","2023-02-04","16:10:50","16:11:02","OUT","","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("361","104","Mr Neroeh Franz Ravis","M","2023-02-04","16:11:02","16:11:22","OUT","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("362","104","Mr Neroeh Franz Ravis","M","2023-02-04","16:11:33","17:00:00","IN","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("363","200889"," Alec Gesuden","","2023-02-06","09:28:46","09:55:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9501646638");
+INSERT INTO `inout` VALUES("364","190035"," Kim Suria","","2023-02-06","10:39:46","15:10:06","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9982210408");
+INSERT INTO `inout` VALUES("365","191725"," Ma. Bernadette Sabanal","","2023-02-06","11:13:27","11:23:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9561758078");
+INSERT INTO `inout` VALUES("366","190312"," Job Sabdao","","2023-02-06","11:13:37","11:48:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9771148551");
+INSERT INTO `inout` VALUES("367","190026"," Hannah Torzar","","2023-02-06","11:13:41","11:23:09","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9291186049");
+INSERT INTO `inout` VALUES("368","190026"," Hannah Torzar","","2023-02-06","11:47:35","16:14:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9291186049");
+INSERT INTO `inout` VALUES("369","191725"," Ma. Bernadette Sabanal","","2023-02-06","11:47:51","16:31:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9561758078");
+INSERT INTO `inout` VALUES("370","190115"," Airron Khyle Sayno","","2023-02-06","11:54:42","12:21:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9094858392");
+INSERT INTO `inout` VALUES("371","190310"," John Carlo Tapiz","","2023-02-06","11:54:53","16:22:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9467698690");
+INSERT INTO `inout` VALUES("372","190877"," Rhona Michaela Sarcedo","","2023-02-06","11:57:26","16:32:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9107193316");
+INSERT INTO `inout` VALUES("373","222974"," Jhon Mheayeer Estares","","2023-02-06","12:06:01","12:38:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198616823");
+INSERT INTO `inout` VALUES("374","223301"," Lance Christian Belludo","","2023-02-06","12:43:16","13:45:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9682916984");
+INSERT INTO `inout` VALUES("375","223300"," Cassandra Jeanne Hemedez","","2023-02-06","12:43:30","13:45:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9673302106");
+INSERT INTO `inout` VALUES("376","222128"," Princess Dianne Bodollo","","2023-02-06","12:43:42","13:45:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9682916970");
+INSERT INTO `inout` VALUES("377","223052"," Janeth Lacson","","2023-02-06","13:06:24","14:56:57","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9503571340");
+INSERT INTO `inout` VALUES("378","223521"," Shane Domogma","","2023-02-06","13:06:29","15:23:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9165347457");
+INSERT INTO `inout` VALUES("379","222347"," Janine Arnaiz","","2023-02-06","13:06:50","15:23:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9515685035");
+INSERT INTO `inout` VALUES("380","223113"," Geann Peñaflor","","2023-02-06","13:06:55","15:23:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9461561631");
+INSERT INTO `inout` VALUES("381","222201"," Pauline Mae Camaro","","2023-02-06","13:07:00","15:23:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9261847612");
+INSERT INTO `inout` VALUES("382","222366"," Diosdado, II Baldorado","","2023-02-06","13:07:03","13:14:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9475614667");
+INSERT INTO `inout` VALUES("383","222312"," John Marc Ian Abasula","","2023-02-06","13:07:20","15:23:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9772786510");
+INSERT INTO `inout` VALUES("384","222685"," Beea Raviz","","2023-02-06","13:07:31","13:13:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9636252132");
+INSERT INTO `inout` VALUES("385","223005"," Mariella Balauro","","2023-02-06","13:08:20","15:24:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9955400674");
+INSERT INTO `inout` VALUES("386","222258"," Chammie Asido","","2023-02-06","13:20:06","15:24:03","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9289891477");
+INSERT INTO `inout` VALUES("387","221892"," Cassandra Annajean Ferrer","","2023-02-06","13:49:05","15:22:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9564206355");
+INSERT INTO `inout` VALUES("388","222974"," Jhon Mheayeer Estares","","2023-02-06","13:49:37","15:14:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198616823");
+INSERT INTO `inout` VALUES("389","200553"," Nichole Nette Laceda","","2023-02-06","13:49:52","15:22:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9124034479");
+INSERT INTO `inout` VALUES("390","222340"," Yvhonne Guevarra","","2023-02-06","13:50:04","16:55:19","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9704921037");
+INSERT INTO `inout` VALUES("391","223031"," Viamay Deneros","","2023-02-06","13:50:25","16:26:47","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9972001428");
+INSERT INTO `inout` VALUES("392","221958"," Abdel Ezekiel Pilapil","","2023-02-06","14:03:51","16:09:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("393","223052"," Janeth Lacson","","2023-02-06","14:56:57","14:58:20","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","9503571340");
+INSERT INTO `inout` VALUES("394","223052"," Janeth Lacson","","2023-02-06","14:58:20","14:58:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9503571340");
+INSERT INTO `inout` VALUES("395","192849"," Jay Golde","","2023-02-06","15:09:41","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9454520876");
+INSERT INTO `inout` VALUES("396","190035"," Kim Suria","","2023-02-06","15:10:06","16:36:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9982210408");
+INSERT INTO `inout` VALUES("397","190312"," Job Sabdao","","2023-02-06","15:15:26","16:36:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9771148551");
+INSERT INTO `inout` VALUES("398","222974"," Jhon Mheayeer Estares","","2023-02-06","15:23:03","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9198616823");
+INSERT INTO `inout` VALUES("399","221632"," Okora Taratingan","","2023-02-06","16:00:18","16:37:47","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9569083201");
+INSERT INTO `inout` VALUES("400","190026"," Hannah Torzar","","2023-02-06","16:15:28","16:20:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9291186049");
+INSERT INTO `inout` VALUES("401","221901"," Jesherel Albis","","2023-02-06","16:24:43","16:56:08","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("402","200553"," Nichole Nette Laceda","","2023-02-06","16:26:29","16:55:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9124034479");
+INSERT INTO `inout` VALUES("403","222871"," May Gabrielle Rodolfo","","2023-02-06","16:45:01","16:55:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9636575972");
+INSERT INTO `inout` VALUES("404","222870"," Alec Arrielle Orbista","","2023-02-06","16:45:29","16:55:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9217711468");
+INSERT INTO `inout` VALUES("405","161186"," Bea Jeanne Fajardo","","2023-02-06","16:52:48","16:55:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305247312");
+INSERT INTO `inout` VALUES("406","212781"," Mel Joyce Laurel","","2023-02-06","16:52:59","16:55:50","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9663227091");
+INSERT INTO `inout` VALUES("407","221958"," Abdel Ezekiel Pilapil","","2023-02-07","08:58:53","13:59:03","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9193477799");
+INSERT INTO `inout` VALUES("408","221895"," Lorena Diana Oresca","","2023-02-07","09:26:14","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9106046706");
+INSERT INTO `inout` VALUES("409","220870"," Cielo Grace Pellazo","","2023-02-07","09:26:18","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9569608251");
+INSERT INTO `inout` VALUES("410","223321"," Catherine Palma","","2023-02-07","09:26:21","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9074380436");
+INSERT INTO `inout` VALUES("411","223052"," Janeth Lacson","","2023-02-07","09:31:10","13:28:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9503571340");
+INSERT INTO `inout` VALUES("412","222938"," John Loyd Icatlo","","2023-02-07","09:31:22","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9296842177");
+INSERT INTO `inout` VALUES("413","222630"," Jhon Aries Jalimao","","2023-02-07","09:31:49","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9557155025");
+INSERT INTO `inout` VALUES("414","222651"," Jelly May Baira","","2023-02-07","09:32:09","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9812944349");
+INSERT INTO `inout` VALUES("415","222936"," Gwenet Huelgas","","2023-02-07","09:32:32","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9633625651");
+INSERT INTO `inout` VALUES("416","222373"," Arianne Mae Caudilla","","2023-02-07","09:32:38","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9101198761");
+INSERT INTO `inout` VALUES("417","152491"," Kim Moises Lafuerte","","2023-02-07","09:33:00","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9482491094");
+INSERT INTO `inout` VALUES("418","200303"," Wesley Clacio","","2023-02-07","13:12:18","13:48:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9308551007");
+INSERT INTO `inout` VALUES("419","221908"," John Lloyd Dando","","2023-02-07","13:12:39","13:48:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9663944448");
+INSERT INTO `inout` VALUES("420","161182"," Noren Palma","","2023-02-07","13:15:44","14:15:02","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9154697347");
+INSERT INTO `inout` VALUES("421","223224"," Jerain Lei Bustria","","2023-02-07","13:16:29","16:06:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","639503715701");
+INSERT INTO `inout` VALUES("422","211984"," John Lowie Balon","","2023-02-07","13:16:42","16:07:02","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9483620090");
+INSERT INTO `inout` VALUES("423","221750"," Patrisha Mae Mendoza","","2023-02-07","13:19:14","16:54:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9465428096");
+INSERT INTO `inout` VALUES("424","223052"," Janeth Lacson","","2023-02-07","13:29:11","14:30:35","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9503571340");
+INSERT INTO `inout` VALUES("425","221950"," John Peter Balane","","2023-02-07","13:29:39","13:53:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9567556028");
+INSERT INTO `inout` VALUES("426","221901"," Jesherel Albis","","2023-02-07","13:29:54","13:53:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("427","221891"," Allyza Aborde","","2023-02-07","13:30:08","13:53:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9381859790");
+INSERT INTO `inout` VALUES("428","200300"," Charles Jordan Bawanan","","2023-02-07","13:35:34","13:48:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9105636778");
+INSERT INTO `inout` VALUES("429","221642"," John Michael Gasis","","2023-02-07","13:35:48","13:48:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9463337346");
+INSERT INTO `inout` VALUES("430","104","Mr Neroeh Franz Ravis","M","2023-02-07","13:46:37","17:00:00","IN","MC NURSING LIBRARY","STUDENT"," MC MAIN LIBRARY","","","franz@mabinicolleges.edu.ph","");
+INSERT INTO `inout` VALUES("431","142083"," Angelica Liwanag","","2023-02-07","14:26:04","15:24:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9508672962");
+INSERT INTO `inout` VALUES("432","142035"," Karl Sopia Marielle Era","","2023-02-07","14:26:17","15:24:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9662676030");
+INSERT INTO `inout` VALUES("433","142033"," Ericka Cuevas","","2023-02-07","14:38:30","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9519713602");
+INSERT INTO `inout` VALUES("434","182209"," Keiala Marie Capistrano","","2023-02-07","14:49:12","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9461476238");
+INSERT INTO `inout` VALUES("435","223431"," Hannah Mae Aguenza","","2023-02-07","14:55:56","15:30:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9512922184");
+INSERT INTO `inout` VALUES("436","221901"," Jesherel Albis","","2023-02-07","14:56:25","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9305246373");
+INSERT INTO `inout` VALUES("437","222101"," Ginalyn Balon","","2023-02-07","14:56:43","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9303632202");
+INSERT INTO `inout` VALUES("438","221950"," John Peter Balane","","2023-02-07","14:56:48","15:02:25","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9567556028");
+INSERT INTO `inout` VALUES("439","222265"," Cyrus Bruno Abitria","","2023-02-07","14:56:51","15:02:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9665974748");
+INSERT INTO `inout` VALUES("440","222069"," Eizel Andaya","","2023-02-07","15:00:11","15:30:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9485889524");
+INSERT INTO `inout` VALUES("441","222020"," Layca Adano","","2023-02-07","15:00:16","15:30:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9677808657");
+INSERT INTO `inout` VALUES("442","223052"," Janeth Lacson","","2023-02-07","15:02:03","15:58:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9503571340");
+INSERT INTO `inout` VALUES("443","222494"," Shane Templonuevo","","2023-02-07","15:36:53","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9480240449");
+INSERT INTO `inout` VALUES("444","222505"," Marry Mel Gonzales","","2023-02-07","15:48:06","15:48:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","9161602906");
+INSERT INTO `inout` VALUES("445","221958"," Abdel Ezekiel Pilapil","","2023-02-07","16:54:56","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("446","200377"," Judy Rose Amandy","","2023-02-09","09:05:31","09:05:42","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("447","200377"," Judy Rose Amandy","","2023-02-09","09:05:42","11:13:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("448","201285"," Kevin Bryce Zantua","","2023-02-09","09:06:13","09:33:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("449","221177"," Lady Lyrencee Joy Avila","","2023-02-09","09:12:28","11:13:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("450","221976"," Alyssa Guia Baguio","","2023-02-09","09:55:03","11:13:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("451","221734"," Edward Paul Ablao","","2023-02-09","09:55:46","11:06:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("452","221999"," Jannah Allago","","2023-02-09","09:56:02","11:05:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("453","161288"," Aiona Mae Almoguera","","2023-02-09","09:56:23","11:05:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("454","221015"," Ronnalyn Badinas","","2023-02-09","09:56:41","11:06:25","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("455","222334"," John Lloyd Aragon","","2023-02-09","09:57:01","11:06:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("456","200731"," Rianne Grace Cortiguerra","","2023-02-09","09:59:28","10:32:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("457","201410"," Luz Fernandez","","2023-02-09","09:59:39","10:32:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("458","222305"," Hannah Adan","","2023-02-09","10:00:29","11:13:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("459","221901"," Jesherel Albis","","2023-02-09","10:06:53","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("460","222100"," Karen Asis","","2023-02-09","10:13:57","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("461","161262"," Romart Jess Amisola","","2023-02-09","10:15:24","11:05:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("462","161314"," Maekyla Abarca","","2023-02-09","10:15:41","11:06:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("463","200283"," Jan Benedict Mitch Almira","","2023-02-09","10:16:46","11:06:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("464","202222"," Rica Balon","","2023-02-09","10:29:36","11:10:43","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("465","200265"," Camille Cuaño","","2023-02-09","10:30:03","11:11:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("466","221977"," Bianca Mae Bataller","","2023-02-09","10:30:20","11:11:01","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("467","222386"," Kent Christian Balasta","","2023-02-09","10:30:34","11:11:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("468","200233"," Guien Anrei Basanta","","2023-02-09","10:30:40","11:10:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("469","222196"," Michael Joshua Casallos","","2023-02-09","10:30:45","11:11:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("470","222290"," Mary Joy Consuelo","","2023-02-09","10:38:42","11:10:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("471","161221"," Mary Grace De Quiros","","2023-02-09","10:38:54","11:09:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("472","161184"," Ednette Joyce Abogado","","2023-02-09","10:48:52","11:13:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("473","222305"," Hannah Adan","","2023-02-09","13:35:19","15:33:11","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("474","221177"," Lady Lyrencee Joy Avila","","2023-02-09","13:36:58","15:33:08","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("475","221292"," Jahaziel Ella","","2023-02-09","13:37:03","15:33:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("476","222308"," Kathreen Rayos","","2023-02-09","13:37:08","14:05:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("477","142103"," Joshua Quiozon","","2023-02-09","14:04:10","14:17:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("478","182311"," Limpoy Wong","","2023-02-09","14:04:24","14:17:48","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("479","222308"," Kathreen Rayos","","2023-02-09","14:09:55","14:16:19","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("480","192915"," Jomuel Obida","","2023-02-09","14:15:29","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("481","210712"," Chris Daniel Odiaman","","2023-02-09","14:15:42","16:03:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("482","210363"," Emrey Ulpina","","2023-02-09","14:15:55","16:03:43","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("483","193379"," Josh Vincent Oriño","","2023-02-09","14:16:05","16:03:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("484","152634"," Aleck Samantha Sayson","","2023-02-09","14:25:39","16:03:08","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("485","223221"," Mary Criz San Jose","","2023-02-09","15:03:21","15:08:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("486","211667"," Kate Nicolle Torres","","2023-02-09","15:03:33","15:08:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("487","222305"," Hannah Adan","","2023-02-09","15:33:11","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("488","193436"," Angelica Rodriguez","","2023-02-09","15:35:34","16:00:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("489","223221"," Mary Criz San Jose","","2023-02-09","15:35:48","16:00:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("490","193046"," Dewayne Jueves","","2023-02-09","16:00:45","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("491","210545"," Sophia Dela Torre","","2023-02-09","16:03:04","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("492","222964"," Rowelyn Dela Cruz","","2023-02-09","16:33:56","16:56:41","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("493","212584"," Jovelyn Suaiso","","2023-02-09","16:56:10","16:56:25","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("494","212584"," Jovelyn Suaiso","","2023-02-09","16:58:04","16:58:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("495","190115"," Airron Khyle Sayno","","2023-02-10","08:21:14","10:36:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("496","222409"," Beatrix Ellinor Belen","","2023-02-10","09:42:54","10:16:59","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9166996340");
+INSERT INTO `inout` VALUES("497","211579"," Princes Borito","","2023-02-10","09:43:14","10:16:40","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9271380053");
+INSERT INTO `inout` VALUES("498","222401"," Ronalyn Cemanes","","2023-02-10","09:43:34","10:17:12","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9914860441");
+INSERT INTO `inout` VALUES("499","190434"," Arianne Pearl Packay","","2023-02-10","09:43:40","09:54:08","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("500","180868"," Jessa Mae Mogas","","2023-02-10","09:43:53","09:54:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("501","210549"," Billy Peña","","2023-02-10","09:43:57","10:17:31","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9108185428");
+INSERT INTO `inout` VALUES("502","190310"," John Carlo Tapiz","","2023-02-10","09:44:05","09:55:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("503","222626"," Pia Breguiles","","2023-02-10","09:44:07","10:17:17","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9309211010");
+INSERT INTO `inout` VALUES("504","190312"," Job Sabdao","","2023-02-10","09:44:11","09:54:38","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("505","190302"," Chelsea Mae Serrano","","2023-02-10","09:46:16","10:19:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("506","181353"," Rhianell Matre","","2023-02-10","09:47:13","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("507","190877"," Rhona Michaela Sarcedo","","2023-02-10","09:48:11","10:19:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("508","181257"," Kate Subel Ordinario","","2023-02-10","09:49:29","09:54:03","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("509","190568"," Ana Louise Batalla","","2023-02-10","09:56:57","10:36:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("510","223073"," Sheina Mae Lopez","","2023-02-10","10:01:03","10:50:30","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9956208590");
+INSERT INTO `inout` VALUES("511","191735"," Angelo Justine Maceda","","2023-02-10","10:03:36","10:54:15","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9127923965");
+INSERT INTO `inout` VALUES("512","222063"," Chen-Chen Necesario","","2023-02-10","10:05:33","11:59:02","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("513","222871"," May Gabrielle Rodolfo","","2023-02-10","10:05:46","11:43:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("514","200377"," Judy Rose Amandy","","2023-02-10","10:06:15","11:58:41","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("515","221929"," Cherry Joy Bas","","2023-02-10","10:07:17","11:59:13","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("516","220049"," Almira Balce","","2023-02-10","10:13:15","10:33:52","OUT","MC MAIN LIBRARY","GRAD SCHOOL"," MC MAIN LIBRARY","","","","9233099268");
+INSERT INTO `inout` VALUES("517","221165"," Lindsey Mharie Ponayo","","2023-02-10","10:13:23","10:18:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("518","222261"," Dahlia Soriano","","2023-02-10","10:13:29","10:17:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("519","220772"," Jessa Marie Cornito","","2023-02-10","10:13:34","10:18:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("520","220747"," Jorem Laviña","","2023-02-10","10:13:39","10:18:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("521","222261"," Dahlia Soriano","","2023-02-10","10:17:53","11:16:33","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("522","222619"," Mariella Ruales","","2023-02-10","10:18:02","10:49:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("523","221165"," Lindsey Mharie Ponayo","","2023-02-10","10:18:06","11:16:28","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("524","220772"," Jessa Marie Cornito","","2023-02-10","10:18:18","11:17:45","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("525","191001"," Muanira Gasanara","","2023-02-10","10:18:21","10:43:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("526","220747"," Jorem Laviña","","2023-02-10","10:18:24","11:16:38","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("527","201679"," Risha Abigail Tolosa","","2023-02-10","10:19:47","10:46:11","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("528","182089"," Princess Nhelie Mae Sarcia","","2023-02-10","10:20:04","10:46:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("529","224098"," Andrew Garcia","","2023-02-10","10:37:43","10:37:54","OUT","MC MAIN LIBRARY","College of Computer Studies"," MC MAIN LIBRARY","","","","9202352222");
+INSERT INTO `inout` VALUES("530","182169"," Princess Zantua","","2023-02-10","10:46:29","10:46:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("531","224088"," Dannilyn Besenio","","2023-02-10","10:47:35","10:49:06","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9079192442");
+INSERT INTO `inout` VALUES("532","211162"," Aime Esperas","","2023-02-10","10:51:31","10:52:43","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9517647675");
+INSERT INTO `inout` VALUES("533","201726"," Henes Bernardo Salva","","2023-02-10","10:55:31","11:12:01","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9294356937");
+INSERT INTO `inout` VALUES("534","152705"," Hannah Yvone Laforte","","2023-02-10","11:03:56","11:04:42","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9479892975");
+INSERT INTO `inout` VALUES("535","182169"," Princess Zantua","","2023-02-10","11:18:05","12:00:05","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("536","201679"," Risha Abigail Tolosa","","2023-02-10","11:18:09","11:59:52","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("537","182089"," Princess Nhelie Mae Sarcia","","2023-02-10","11:18:14","12:00:09","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("538","221165"," Lindsey Mharie Ponayo","","2023-02-10","11:21:48","11:22:04","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("539","222261"," Dahlia Soriano","","2023-02-10","11:22:09","11:22:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("540","190568"," Ana Louise Batalla","","2023-02-10","11:27:19","12:00:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("541","190115"," Airron Khyle Sayno","","2023-02-10","11:27:25","12:00:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("542","210379"," Mark Balte","","2023-02-10","11:40:08","11:40:27","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9122013938");
+INSERT INTO `inout` VALUES("543","210379"," Mark Balte","","2023-02-10","11:40:40","13:06:27","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9122013938");
+INSERT INTO `inout` VALUES("544","210179"," John Kenneth Elot","","2023-02-10","11:40:59","11:57:09","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9972044300");
+INSERT INTO `inout` VALUES("545","223492"," Abegail Delos Santos","","2023-02-10","11:44:43","11:56:23","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9166153002");
+INSERT INTO `inout` VALUES("546","200656"," Alana Lucelle Verceluz","","2023-02-10","13:02:08","13:02:35","OUT","","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9268604465");
+INSERT INTO `inout` VALUES("547","200656"," Alana Lucelle Verceluz","","2023-02-10","13:02:35","13:03:54","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9268604465");
+INSERT INTO `inout` VALUES("548","211467"," Ruffa May Capistrano","","2023-02-10","13:02:50","14:29:17","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9489324027");
+INSERT INTO `inout` VALUES("549","210428"," Maria Isabel Hernandez","","2023-02-10","13:14:54","13:15:18","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("550","210428"," Maria Isabel Hernandez","","2023-02-10","13:15:18","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("551","210544"," Desiree Laviña","","2023-02-10","13:15:34","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("552","190115"," Airron Khyle Sayno","","2023-02-10","13:32:57","14:18:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("553","190568"," Ana Louise Batalla","","2023-02-10","13:33:06","14:18:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("554","222296"," John Criss Rasco","","2023-02-10","13:36:17","13:37:45","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9304728651");
+INSERT INTO `inout` VALUES("555","220914"," Jaicka Arcillo","","2023-02-10","13:44:34","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9519044231");
+INSERT INTO `inout` VALUES("556","220872"," Nica Joy Asutilla","","2023-02-10","13:44:54","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9634457836");
+INSERT INTO `inout` VALUES("557","201410"," Luz Fernandez","","2023-02-10","13:57:22","16:36:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("558","201175"," Chrisanthony Jimenez","","2023-02-10","13:57:34","14:11:55","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("559","200731"," Rianne Grace Cortiguerra","","2023-02-10","13:57:46","16:37:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("560","211082"," Mary Rose Pardo","","2023-02-10","14:02:31","15:23:56","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9957959271");
+INSERT INTO `inout` VALUES("561","211287"," Jonell Rufo","","2023-02-10","14:02:46","15:24:09","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9207211985");
+INSERT INTO `inout` VALUES("562","210379"," Mark Balte","","2023-02-10","14:09:43","14:10:03","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9122013938");
+INSERT INTO `inout` VALUES("563","223546"," Marc Dave Banday","","2023-02-10","14:10:18","14:29:42","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9810335443");
+INSERT INTO `inout` VALUES("564","220678"," John Robert Chavez","","2023-02-10","14:12:43","14:18:12","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9558177254");
+INSERT INTO `inout` VALUES("565","223473"," Niño Reabad","","2023-02-10","14:13:47","14:43:24","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9501843262");
+INSERT INTO `inout` VALUES("566","221928"," John Lloyd Nolasco","","2023-02-10","14:14:04","14:42:51","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9389982818");
+INSERT INTO `inout` VALUES("567","222719"," Edron Cedric Valera","","2023-02-10","14:15:24","14:43:08","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9165564127");
+INSERT INTO `inout` VALUES("568","152577"," Christian Yabut","","2023-02-10","14:15:47","14:25:41","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9610147409");
+INSERT INTO `inout` VALUES("569","221922"," Mikee Anazette Abad","","2023-02-10","14:20:08","14:57:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("570","220678"," John Robert Chavez","","2023-02-10","14:21:00","14:26:20","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9558177254");
+INSERT INTO `inout` VALUES("571","223230"," Andrea Barcelona","","2023-02-10","14:22:42","14:56:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("572","202096"," Ashley Joy Quiñones","","2023-02-10","14:23:15","14:45:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("573","222738"," Carl Joshua Astillero","","2023-02-10","14:23:54","14:43:18","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9512787114");
+INSERT INTO `inout` VALUES("574","210150"," Carl Benedict Abrera","","2023-02-10","14:25:56","14:26:07","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9305477074");
+INSERT INTO `inout` VALUES("575","180839"," Jhonattan Jacinto","","2023-02-10","14:26:36","16:37:24","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("576","221734"," Edward Paul Ablao","","2023-02-10","14:26:42","14:56:37","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("577","182249"," James Rovan Ilao","","2023-02-10","14:26:48","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("578","211621"," Jovil Libre","","2023-02-10","14:39:09","15:46:03","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9104185244");
+INSERT INTO `inout` VALUES("579","210152"," Angelo Burlayan","","2023-02-10","14:39:20","15:25:32","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9305342784");
+INSERT INTO `inout` VALUES("580","210272"," Mark Jonan Candelaria","","2023-02-10","14:39:45","15:46:09","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9389939131");
+INSERT INTO `inout` VALUES("581","221724"," Princess Rajas","","2023-02-10","14:42:30","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","0946 155 4889");
+INSERT INTO `inout` VALUES("582","211121"," Grityl Shayne Marbella","","2023-02-10","14:58:30","15:44:00","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9164676156");
+INSERT INTO `inout` VALUES("583","211377"," Zyrah Mae Norte","","2023-02-10","14:58:47","15:44:06","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9509308137");
+INSERT INTO `inout` VALUES("584","142083"," Angelica Liwanag","","2023-02-10","15:00:16","15:16:41","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("585","142116"," Alexa Joyce Elnar","","2023-02-10","15:00:31","15:16:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("586","211893"," Krissy Lou Napoles","","2023-02-10","15:03:52","15:40:46","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9388717400");
+INSERT INTO `inout` VALUES("587","210839 "," Regine Moron","","2023-02-10","15:04:15","15:40:58","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9637670731");
+INSERT INTO `inout` VALUES("588","212732"," Jenelyn Gadil","","2023-02-10","15:18:42","16:35:37","OUT","MC MAIN LIBRARY","GRAD SCHOOL"," MC MAIN LIBRARY","","","","0977 701 4096");
+INSERT INTO `inout` VALUES("589","212733"," Anna Jane Nivero","","2023-02-10","15:18:53","16:35:48","OUT","MC MAIN LIBRARY","GRAD SCHOOL"," MC MAIN LIBRARY","","","","9451968517");
+INSERT INTO `inout` VALUES("590","222035"," Darlene Grace Dellosa","","2023-02-10","15:21:00","15:23:38","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9914679873");
+INSERT INTO `inout` VALUES("591","222073"," Joy Ojo","","2023-02-10","15:21:15","15:25:13","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","639918457623");
+INSERT INTO `inout` VALUES("592","222057"," Adrian Ibarra","","2023-02-10","15:21:34","15:26:16","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9318809339");
+INSERT INTO `inout` VALUES("593","210266"," Melissa Mae Vargas","","2023-02-10","15:22:10","15:22:39","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9107976579");
+INSERT INTO `inout` VALUES("594","212729"," Criselda Rafael","","2023-02-10","15:22:58","16:36:07","OUT","MC MAIN LIBRARY","GRAD SCHOOL"," MC MAIN LIBRARY","","","","09261590-689");
+INSERT INTO `inout` VALUES("595","161094"," Deborah Leigh Perez","","2023-02-10","15:32:59","15:46:36","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9485404299");
+INSERT INTO `inout` VALUES("596","201206"," Katrina Delorino","","2023-02-10","15:33:19","15:46:31","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9354682125");
+INSERT INTO `inout` VALUES("597","200378"," Roscille Malenne Abilay","","2023-02-10","15:33:32","15:46:51","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9206214883");
+INSERT INTO `inout` VALUES("598","222735"," Jonald Bitara","","2023-02-10","15:34:15","15:47:03","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9637089057");
+INSERT INTO `inout` VALUES("599","142083"," Angelica Liwanag","","2023-02-10","15:35:11","15:53:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("600","142116"," Alexa Joyce Elnar","","2023-02-10","15:35:16","15:52:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("601","210239"," Leommel Tabigan","","2023-02-10","15:39:37","15:43:19","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9072120375");
+INSERT INTO `inout` VALUES("602","202153"," Reanel Gillera","","2023-02-10","15:39:51","15:43:25","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9121504189");
+INSERT INTO `inout` VALUES("603","210615"," Charlrien Joy Bobis","","2023-02-10","15:40:05","15:43:30","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9519040770");
+INSERT INTO `inout` VALUES("604","200231"," Louie Mari Quiñones","","2023-02-10","15:41:12","15:48:31","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9957957277");
+INSERT INTO `inout` VALUES("605","223487"," Jaime Manlangit Jr.","","2023-02-10","15:41:26","15:48:44","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9129007788");
+INSERT INTO `inout` VALUES("606","222735"," Jonald Bitara","","2023-02-10","15:47:38","15:53:52","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9637089057");
+INSERT INTO `inout` VALUES("607","192188"," Christopher Angelo Abaño","","2023-02-10","15:50:25","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9672180457");
+INSERT INTO `inout` VALUES("608","211886"," Nema Joy Estabaya","","2023-02-10","15:51:26","15:53:01","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("609","212313"," Marialyn Vendero","","2023-02-10","15:51:48","15:53:12","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("610","211439"," Ruby Joy Sarmiento","","2023-02-10","15:54:06","15:57:14","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9508849927");
+INSERT INTO `inout` VALUES("611","211277"," Loreta Caldit","","2023-02-10","15:54:43","15:57:29","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","0912 793 7218");
+INSERT INTO `inout` VALUES("612","210914"," Ally Cadag","","2023-02-10","15:55:03","15:57:23","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9484947988");
+INSERT INTO `inout` VALUES("613","211122"," Karen Magdaraog","","2023-02-10","16:04:13","16:11:39","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9674167650");
+INSERT INTO `inout` VALUES("614","211710"," Micaela Macapas","","2023-02-10","16:04:26","16:11:17","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9307007442");
+INSERT INTO `inout` VALUES("615","222653"," Diana Rose Bautista","","2023-02-11","08:25:37","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("616","223260"," Jilliane Eira Barrios","","2023-02-11","08:25:50","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("617","222347"," Janine Arnaiz","","2023-02-11","08:26:07","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("618","222258"," Chammie Asido","","2023-02-11","08:26:13","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("619","223005"," Mariella Balauro","","2023-02-11","08:26:19","10:53:57","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("620","222312"," John Marc Ian Abasula","","2023-02-11","08:26:36","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("621","201498"," Mark Angelo Rivero","","2023-02-11","09:57:07","10:47:00","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9222941467");
+INSERT INTO `inout` VALUES("622","201055"," Brian Abiera","","2023-02-11","09:57:38","10:47:15","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9078887794");
+INSERT INTO `inout` VALUES("623","200716"," Rodelyn Alangilang","","2023-02-11","10:02:35","10:02:57","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9515289428");
+INSERT INTO `inout` VALUES("624","221959"," Mart Julius Villaester","","2023-02-11","10:03:11","11:18:40","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9916800780");
+INSERT INTO `inout` VALUES("625","221532"," Aleyah Fornilos","","2023-02-11","10:03:44","10:16:50","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9091856420");
+INSERT INTO `inout` VALUES("626","221504"," Samantha Lizette Bayani","","2023-02-11","10:04:58","10:16:32","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9487394640");
+INSERT INTO `inout` VALUES("627","222537"," Ruth Lavarro","","2023-02-11","10:05:18","11:21:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("628","212817"," Maria Reina Florendo","","2023-02-11","10:05:45","11:21:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("629","222628"," Martina Pardo","","2023-02-11","10:05:58","11:21:55","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("630","222684"," Matthew Ismael Moral","","2023-02-11","10:06:28","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("631","222046"," John Leanard Layusa","","2023-02-11","10:06:48","11:20:42","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("632","201644"," John Racho","","2023-02-11","10:09:36","11:17:01","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9464193332");
+INSERT INTO `inout` VALUES("633","160742"," Michael Angelo Mondares","","2023-02-11","10:09:47","10:40:25","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9464217649");
+INSERT INTO `inout` VALUES("634","221830"," Reymond Besagar","","2023-02-11","10:12:36","10:12:49","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","");
+INSERT INTO `inout` VALUES("635","190252"," Kimberly Aban","","2023-02-11","10:13:27","10:13:46","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("636","150442"," Maricon Zantua","","2023-02-11","10:26:24","10:55:14","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9079304668");
+INSERT INTO `inout` VALUES("637","223005"," Mariella Balauro","","2023-02-11","10:53:57","11:36:18","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("638","224015"," Patrick Cabrejas","","2023-02-11","10:54:53","12:01:52","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9776085393");
+INSERT INTO `inout` VALUES("639","200314"," Mary Joy Veran","","2023-02-11","11:01:43","11:51:31","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9198561737");
+INSERT INTO `inout` VALUES("640","221534"," Glysa Asotea","","2023-02-11","11:01:55","11:51:21","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9675162660");
+INSERT INTO `inout` VALUES("641","221553"," Mary Nhess Rada","","2023-02-11","11:02:09","11:51:12","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9690279538");
+INSERT INTO `inout` VALUES("642","221901"," Jesherel Albis","","2023-02-11","11:07:44","11:41:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("643","201705"," Mary Jean Abaño","","2023-02-11","11:15:55","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9102064055");
+INSERT INTO `inout` VALUES("644","200791"," Vernadith Adem","","2023-02-11","11:16:19","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9984632303");
+INSERT INTO `inout` VALUES("645","200716"," Rodelyn Alangilang","","2023-02-11","11:16:35","11:18:18","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9515289428");
+INSERT INTO `inout` VALUES("646","201513"," Jhon Lenard Quila","","2023-02-11","11:16:46","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9107180231");
+INSERT INTO `inout` VALUES("647","201343"," Jerome Rocas","","2023-02-11","11:17:12","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9127172154");
+INSERT INTO `inout` VALUES("648","222717 "," Christian Cj Mangonon","","2023-02-11","11:21:00","17:00:00","IN","MC NURSING LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9176573396");
+INSERT INTO `inout` VALUES("649","222716"," Mark Clemence Pacao","","2023-02-11","11:21:39","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("650","222619"," Mariella Ruales","","2023-02-11","11:28:24","11:29:27","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("651","223005"," Mariella Balauro","","2023-02-11","11:36:18","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("652","212183"," Trisha Lhyn Ramos","","2023-02-11","11:42:27","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9102282631");
+INSERT INTO `inout` VALUES("653","220747"," Jorem Laviña","","2023-02-11","13:11:26","13:11:47","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("654","220747"," Jorem Laviña","","2023-02-11","13:11:47","14:01:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("655","200461"," Kristine Matsusaki","","2023-02-11","13:11:58","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("656","221929"," Cherry Joy Bas","","2023-02-11","13:15:20","16:05:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("657","221642"," John Michael Gasis","","2023-02-11","13:15:54","13:58:53","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("658","221901"," Jesherel Albis","","2023-02-11","13:16:26","16:05:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("659","192775"," Aravela Torres","","2023-02-11","13:18:51","13:20:00","OUT","","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9481814135");
+INSERT INTO `inout` VALUES("660","192775"," Aravela Torres","","2023-02-11","13:20:00","16:09:14","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9481814135");
+INSERT INTO `inout` VALUES("661","222133"," Mark Ian John Lita","","2023-02-11","13:25:54","13:28:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("662","222133"," Mark Ian John Lita","","2023-02-11","13:36:11","14:02:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("663","221168"," Jericho Placides","","2023-02-11","13:36:29","14:01:33","OUT","MC NURSING LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9976417383");
+INSERT INTO `inout` VALUES("664","221292"," Jahaziel Ella","","2023-02-11","13:44:03","14:01:19","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("665","200330"," Kathleen Millena","","2023-02-11","13:48:49","14:01:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("666","223455"," Jarmela Mae Dela Peña","","2023-02-11","13:53:11","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9472923824");
+INSERT INTO `inout` VALUES("667","222041"," Sean Christoper Holar","","2023-02-11","13:57:21","14:01:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("668","222606"," John Carlo Amparado","","2023-02-11","14:12:44","14:45:08","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("669","210367"," Mary Ann Asis","","2023-02-11","14:12:58","14:45:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("670","221047"," John Rom Siguenza","","2023-02-11","14:14:07","16:04:51","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9653665144");
+INSERT INTO `inout` VALUES("671","201067"," Madonna Lopez","","2023-02-11","14:15:25","15:48:47","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9489967578");
+INSERT INTO `inout` VALUES("672","201605"," Jade Davillo","","2023-02-11","14:15:51","15:49:01","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9772144068");
+INSERT INTO `inout` VALUES("673","210635"," Diana Rose Zenarosa","","2023-02-11","14:16:06","14:16:38","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("674","201013"," Ryan Jay Llantos","","2023-02-11","14:16:47","17:00:00","IN","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9203138728");
+INSERT INTO `inout` VALUES("675","200973"," Jan Clarenz San Pascual","","2023-02-11","14:17:04","15:49:11","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9388980374");
+INSERT INTO `inout` VALUES("676","200815"," Kaycee Llabanes","","2023-02-11","14:17:20","14:17:37","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9305148112");
+INSERT INTO `inout` VALUES("677","200815"," Kaycee Llabanes","","2023-02-11","14:17:54","15:48:04","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9305148112");
+INSERT INTO `inout` VALUES("678","200435"," Alyssa Abihay","","2023-02-11","14:19:27","16:55:31","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("679","222621"," Renelyn Banga","","2023-02-11","14:19:48","15:39:41","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("680","222506"," Loise Bamba","","2023-02-11","14:19:53","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("681","152541"," Mycah Joy Bagadiong","","2023-02-11","14:23:34","14:51:37","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9103527809");
+INSERT INTO `inout` VALUES("682","180266"," Jissel Raro","","2023-02-11","14:24:38","15:42:40","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9109368789");
+INSERT INTO `inout` VALUES("683","210815"," John Lloyd Lardizabal","","2023-02-11","14:27:08","14:39:16","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9075927130");
+INSERT INTO `inout` VALUES("684","210269"," Aljohn Balisa","","2023-02-11","14:27:57","14:40:06","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9102266897");
+INSERT INTO `inout` VALUES("685","210269"," Aljohn Balisa","","2023-02-11","14:40:17","14:40:56","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9102266897");
+INSERT INTO `inout` VALUES("686","210269"," Aljohn Balisa","","2023-02-11","14:41:46","14:42:05","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9102266897");
+INSERT INTO `inout` VALUES("687","200830"," Dianne Esfer Era","","2023-02-11","14:43:17","14:43:33","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9672449886");
+INSERT INTO `inout` VALUES("688","200830"," Dianne Esfer Era","","2023-02-11","14:43:47","15:48:34","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9672449886");
+INSERT INTO `inout` VALUES("689","221619"," Janel Tafalla","","2023-02-11","14:46:19","14:46:46","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9499549741");
+INSERT INTO `inout` VALUES("690","221578"," Mary Grace San Juan","","2023-02-11","14:47:11","14:56:34","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9127575335");
+INSERT INTO `inout` VALUES("691","221497"," Honey Jenn Orillo","","2023-02-11","14:47:31","14:56:56","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9301471513");
+INSERT INTO `inout` VALUES("692","221619"," Janel Tafalla","","2023-02-11","14:47:56","14:56:14","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9499549741");
+INSERT INTO `inout` VALUES("693","223156"," Nizamae Buenaflor","","2023-02-11","14:56:40","14:57:13","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9656009184");
+INSERT INTO `inout` VALUES("694","210062"," Manette Egar","","2023-02-11","14:57:30","17:00:00","IN","MC MAIN LIBRARY","GRAD SCHOOL"," MC MAIN LIBRARY","","","","9109495274");
+INSERT INTO `inout` VALUES("695","211062"," Rembert Vecida","","2023-02-11","14:57:42","15:07:38","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9662419955");
+INSERT INTO `inout` VALUES("696","223283"," Isaiah Sean Gonzalez","","2023-02-11","15:02:25","16:54:52","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("697","221642"," John Michael Gasis","","2023-02-11","15:02:44","16:55:03","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("698","191693"," Roselyn Asis","","2023-02-11","15:24:01","17:00:00","IN","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9636556204");
+INSERT INTO `inout` VALUES("699","201910"," Edsel Redota","","2023-02-11","15:24:21","17:00:00","IN","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9610146901");
+INSERT INTO `inout` VALUES("700","222621"," Renelyn Banga","","2023-02-11","15:39:41","15:42:06","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("701","222621"," Renelyn Banga","","2023-02-11","15:42:06","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("702","161186"," Bea Jeanne Fajardo","","2023-02-11","15:42:24","16:55:25","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("703","212781"," Mel Joyce Laurel","","2023-02-11","15:42:30","16:55:36","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("704","222331"," Jeffrey Gago","","2023-02-11","15:50:49","16:53:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("705","221993"," John Kenneth Laraya","","2023-02-11","15:51:02","16:52:31","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("706","200627"," Cherry Mae Labordo","","2023-02-11","15:51:25","16:54:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("707","222157"," Nicole Herico","","2023-02-11","15:51:31","16:53:23","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("708","221556"," Gellian Marie Ricafort","","2023-02-11","15:54:05","16:00:32","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9388965800");
+INSERT INTO `inout` VALUES("709","221751"," Niño Angelo Rocas","","2023-02-11","15:54:20","16:01:39","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","639817275165");
+INSERT INTO `inout` VALUES("710","222696"," Melanie Peñaflor","","2023-02-11","15:54:53","16:01:45","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9707910339");
+INSERT INTO `inout` VALUES("711","221740"," Cris Molina","","2023-02-11","15:55:39","16:00:49","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9656258470");
+INSERT INTO `inout` VALUES("712","221712"," Mary Love Magana","","2023-02-11","15:55:57","16:01:25","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9637088108");
+INSERT INTO `inout` VALUES("713","180631"," Christine Palmes","","2023-02-11","16:00:17","16:14:09","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9703225231");
+INSERT INTO `inout` VALUES("714","221901"," Jesherel Albis","","2023-02-11","16:05:39","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("715","222974"," Jhon Mheayeer Estares","","2023-02-11","16:07:30","16:55:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("716","223989"," Hazell Ann De Monteverde","","2023-02-11","16:08:12","17:00:00","IN","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","125558342");
+INSERT INTO `inout` VALUES("717","192775"," Aravela Torres","","2023-02-11","16:09:28","16:56:36","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9481814135");
+INSERT INTO `inout` VALUES("718","221993"," John Kenneth Laraya","","2023-02-11","16:52:31","16:53:05","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("719","221993"," John Kenneth Laraya","","2023-02-11","16:53:05","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("720","222619"," Mariella Ruales","","2023-02-13","08:25:51","08:35:03","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("721","221409"," Roshalene Salva","","2023-02-13","08:32:20","09:19:15","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9924826320");
+INSERT INTO `inout` VALUES("722","222292"," Maribeth Napili","","2023-02-13","08:33:07","09:27:21","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9701472326");
+INSERT INTO `inout` VALUES("723","200425"," Leiann Toyado","","2023-02-13","08:33:28","09:27:36","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9564760162");
+INSERT INTO `inout` VALUES("724","223420"," Rizza Deleña","","2023-02-13","08:42:56","09:43:27","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9516166599");
+INSERT INTO `inout` VALUES("725","223288"," Brainnel Data","","2023-02-13","08:43:08","09:43:53","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9631217579");
+INSERT INTO `inout` VALUES("726","221380"," Ledy Mae Canabe","","2023-02-13","08:49:17","09:19:27","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9926924706");
+INSERT INTO `inout` VALUES("727","221061"," Mark Mhyrben De Luna","","2023-02-13","08:49:33","11:18:04","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9364929830");
+INSERT INTO `inout` VALUES("728","221013"," Rainnier Pajares","","2023-02-13","08:50:03","08:51:24","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9488742376");
+INSERT INTO `inout` VALUES("729","221013"," Rainnier Pajares","","2023-02-13","08:51:39","11:06:59","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9488742376");
+INSERT INTO `inout` VALUES("730","222402"," Jimmylen Dionido","","2023-02-13","08:51:59","11:06:35","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9515498487");
+INSERT INTO `inout` VALUES("731","221109"," Julie Rafer","","2023-02-13","08:52:08","11:07:11","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9519101411");
+INSERT INTO `inout` VALUES("732","222415"," Rommel Abuid","","2023-02-13","08:52:19","11:07:23","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9703234657");
+INSERT INTO `inout` VALUES("733","221195"," Rhea Quintos","","2023-02-13","08:57:32","09:07:32","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9706331753");
+INSERT INTO `inout` VALUES("734","221873"," Afril Jean Cadag","","2023-02-13","09:09:08","09:10:59","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("735","222129"," Kieran Gabriel Decena","","2023-02-13","09:10:46","09:51:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("736","221873"," Afril Jean Cadag","","2023-02-13","09:10:59","10:04:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("737","223520"," Sheena Venida","","2023-02-13","09:11:04","09:50:07","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9955418527");
+INSERT INTO `inout` VALUES("738","221084"," Kyla Canaria","","2023-02-13","09:11:14","09:52:55","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("739","221894"," Maureen Chelsey Rieza","","2023-02-13","09:11:25","09:52:43","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("740","222115"," Mekaila Jane Dela Pacion","","2023-02-13","09:11:31","10:04:47","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("741","222094"," Kaye Contreras","","2023-02-13","09:11:35","09:53:31","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("742","221470"," Geraldine Banogbanog","","2023-02-13","09:11:41","09:50:15","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9752935267");
+INSERT INTO `inout` VALUES("743","221233"," Sofia Trixia Delovino","","2023-02-13","09:11:49","09:52:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("744","220772"," Jessa Marie Cornito","","2023-02-13","09:11:59","09:36:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("745","221482"," Sharmme Lei Liwanag","","2023-02-13","09:20:59","09:55:59","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9274678832");
+INSERT INTO `inout` VALUES("746","200471"," Anjeli Mae Bantiyan","","2023-02-13","09:21:13","09:56:14","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9203274784");
+INSERT INTO `inout` VALUES("747","182315"," Ferren Leigh Fausto","","2023-02-13","09:34:50","09:53:37","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("748","200881"," Kyla Yhen Jamito","","2023-02-13","09:35:01","09:53:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("749","222872"," Kriselda Marie Brutas","","2023-02-13","09:37:58","09:38:21","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9972037800");
+INSERT INTO `inout` VALUES("750","223279"," Jonabel Velasco","","2023-02-13","09:38:11","09:57:21","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9102630230");
+INSERT INTO `inout` VALUES("751","222872"," Kriselda Marie Brutas","","2023-02-13","09:38:32","09:57:08","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9972037800");
+INSERT INTO `inout` VALUES("752","221532"," Aleyah Fornilos","","2023-02-13","09:40:52","10:31:14","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9091856420");
+INSERT INTO `inout` VALUES("753","221504"," Samantha Lizette Bayani","","2023-02-13","09:41:04","10:31:51","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9487394640");
+INSERT INTO `inout` VALUES("754","200319"," Alyzza Khim Efondo","","2023-02-13","09:41:44","10:31:37","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9486791028");
+INSERT INTO `inout` VALUES("755","220694"," Carla Dimaano","","2023-02-13","09:42:02","17:00:00","IN","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9203283510");
+INSERT INTO `inout` VALUES("756","220810"," Rhea Babagay","","2023-02-13","09:42:21","17:00:00","IN","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9978722760");
+INSERT INTO `inout` VALUES("757","192969"," Ardina Sophia Altamarino","","2023-02-13","09:42:34","11:10:22","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9204210727");
+INSERT INTO `inout` VALUES("758","220697"," Alexa Lola","","2023-02-13","09:43:09","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9386529660");
+INSERT INTO `inout` VALUES("759","221405"," Janna Bermejo","","2023-02-13","09:44:15","11:09:57","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9506863619");
+INSERT INTO `inout` VALUES("760","221535"," Lea Cabaña","","2023-02-13","09:44:35","11:10:07","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9099525750");
+INSERT INTO `inout` VALUES("761","224040"," Antonette Lo","","2023-02-13","09:49:50","10:53:52","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9183868760");
+INSERT INTO `inout` VALUES("762","220827"," Francis Estravila","","2023-02-13","09:51:35","09:56:37","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9977861173");
+INSERT INTO `inout` VALUES("763","220778"," Laura Joy Rada","","2023-02-13","09:52:03","09:52:51","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9121777614");
+INSERT INTO `inout` VALUES("764","220778"," Laura Joy Rada","","2023-02-13","09:53:42","09:56:25","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9121777614");
+INSERT INTO `inout` VALUES("765","182315"," Ferren Leigh Fausto","","2023-02-13","09:53:54","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("766","200731"," Rianne Grace Cortiguerra","","2023-02-13","10:05:53","11:24:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("767","223455"," Jarmela Mae Dela Peña","","2023-02-13","10:39:18","11:36:55","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9472923824");
+INSERT INTO `inout` VALUES("768","220838"," Christine Mae Lopez","","2023-02-13","10:39:58","11:15:08","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9126776498");
+INSERT INTO `inout` VALUES("769","223173"," Jessica Mae Doyugan","","2023-02-13","10:40:09","11:14:54","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9319913176");
+INSERT INTO `inout` VALUES("770","221265"," Ma.Sarah Jane Eboña","","2023-02-13","10:40:24","11:15:14","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9637659560");
+INSERT INTO `inout` VALUES("771","181080"," Jhobelle Vargas","","2023-02-13","10:40:38","11:15:25","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","639934100970");
+INSERT INTO `inout` VALUES("772","210325"," Frea Kailah Sendon","","2023-02-13","10:40:57","11:14:48","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9557159694");
+INSERT INTO `inout` VALUES("773","220969"," Cristian Parpan","","2023-02-13","10:41:10","11:15:29","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9772147014");
+INSERT INTO `inout` VALUES("774","221242"," Joshua Octa","","2023-02-13","10:41:26","11:15:20","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9488739456");
+INSERT INTO `inout` VALUES("775","220954"," Rosemarie Entong","","2023-02-13","11:08:09","11:31:07","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9815126755");
+INSERT INTO `inout` VALUES("776","220950"," Venus Shane Sernal","","2023-02-13","11:08:25","11:30:42","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9653116209");
+INSERT INTO `inout` VALUES("777","220949"," Gina Rose Entong","","2023-02-13","11:08:37","11:31:20","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9362606186");
+INSERT INTO `inout` VALUES("778","220707"," Faith Geossle Balanon","","2023-02-13","11:08:51","12:01:30","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9686257324");
+INSERT INTO `inout` VALUES("779","221389"," Blanche Espinar","","2023-02-13","11:08:56","12:01:40","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9079163093");
+INSERT INTO `inout` VALUES("780","221554"," Seanbrent Dave Samonte","","2023-02-13","11:09:09","12:02:04","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9682919519");
+INSERT INTO `inout` VALUES("781","211805"," Mariel Villaluna","","2023-02-13","11:09:29","12:01:25","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9205719012");
+INSERT INTO `inout` VALUES("782","220727"," Juvylen Corbito","","2023-02-13","11:09:44","12:01:44","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9266929724");
+INSERT INTO `inout` VALUES("783","221347"," Sharon Venida","","2023-02-13","11:10:28","12:01:20","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9382908623");
+INSERT INTO `inout` VALUES("784","220948"," Rose Nicole Sarte","","2023-02-13","11:10:44","11:32:12","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9152094702");
+INSERT INTO `inout` VALUES("785","220951"," Sandara Dacillo","","2023-02-13","11:11:03","11:31:27","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9513159514");
+INSERT INTO `inout` VALUES("786","200731"," Rianne Grace Cortiguerra","","2023-02-13","11:24:26","11:58:06","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("787","220951"," Sandara Dacillo","","2023-02-13","11:31:47","11:31:58","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9513159514");
+INSERT INTO `inout` VALUES("788","221374"," Ariane Mago","","2023-02-13","11:45:16","12:01:35","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9104035278");
+INSERT INTO `inout` VALUES("789","221516"," Angela Melgar","","2023-02-13","11:45:30","12:01:58","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9061319532");
+INSERT INTO `inout` VALUES("790","221364"," Mikyla Faye Torrero","","2023-02-13","11:45:48","12:01:52","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9301329379");
+INSERT INTO `inout` VALUES("791","191067"," John Mojibur Salva","","2023-02-13","11:49:37","12:01:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("792","190312"," Job Sabdao","","2023-02-13","11:49:42","12:00:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("793","190877"," Rhona Michaela Sarcedo","","2023-02-13","11:51:16","12:04:09","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("794","223301"," Lance Christian Belludo","","2023-02-13","11:52:36","12:00:40","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("795","223300"," Cassandra Jeanne Hemedez","","2023-02-13","11:52:51","12:00:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("796","222128"," Princess Dianne Bodollo","","2023-02-13","11:53:02","12:01:00","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("797","221083"," Armand Louie Lamadrid","","2023-02-13","11:57:19","12:01:48","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9086279623");
+INSERT INTO `inout` VALUES("798","201410"," Luz Fernandez","","2023-02-13","11:57:46","12:00:30","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("799","200731"," Rianne Grace Cortiguerra","","2023-02-13","11:58:06","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("800","190115"," Airron Khyle Sayno","","2023-02-13","11:58:14","12:05:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("801","190568"," Ana Louise Batalla","","2023-02-13","11:58:28","12:05:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("802","221959"," Mart Julius Villaester","","2023-02-13","13:04:27","13:04:50","OUT","","College of Education"," MC MAIN LIBRARY","","","","9916800780");
+INSERT INTO `inout` VALUES("803","221959"," Mart Julius Villaester","","2023-02-13","13:04:50","13:47:48","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9916800780");
+INSERT INTO `inout` VALUES("804","211793"," Angelica Gacasan","","2023-02-13","13:05:03","13:47:54","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9386176898");
+INSERT INTO `inout` VALUES("805","210174"," Jinky Casungcad","","2023-02-13","13:06:11","13:48:12","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9103495112");
+INSERT INTO `inout` VALUES("806","210333"," Agnes Tortogo","","2023-02-13","13:07:02","13:48:46","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9465940591");
+INSERT INTO `inout` VALUES("807","220827"," Francis Estravila","","2023-02-13","13:07:18","14:05:44","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9977861173");
+INSERT INTO `inout` VALUES("808","220778"," Laura Joy Rada","","2023-02-13","13:07:29","14:05:47","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9121777614");
+INSERT INTO `inout` VALUES("809","210340"," Lerma Jardinero","","2023-02-13","13:10:43","14:15:59","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","09991328194/");
+INSERT INTO `inout` VALUES("810","221409"," Roshalene Salva","","2023-02-13","13:11:37","14:17:16","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9924826320");
+INSERT INTO `inout` VALUES("811","221380"," Ledy Mae Canabe","","2023-02-13","13:12:27","14:17:26","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9926924706");
+INSERT INTO `inout` VALUES("812","223300"," Cassandra Jeanne Hemedez","","2023-02-13","13:12:46","13:14:02","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("813","223298"," Christian Garcera","","2023-02-13","13:13:40","13:41:54","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("814","223301"," Lance Christian Belludo","","2023-02-13","13:13:53","13:42:08","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("815","223300"," Cassandra Jeanne Hemedez","","2023-02-13","13:14:02","13:34:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("816","222128"," Princess Dianne Bodollo","","2023-02-13","13:14:12","13:42:18","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("817","220795"," Juliana Alexza Suba","","2023-02-13","13:15:43","14:05:58","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9486404733");
+INSERT INTO `inout` VALUES("818","220758"," Diane Sureta","","2023-02-13","13:16:04","14:06:03","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9637659759");
+INSERT INTO `inout` VALUES("819","221901"," Jesherel Albis","","2023-02-13","13:19:29","13:19:41","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("820","221901"," Jesherel Albis","","2023-02-13","13:19:56","16:00:39","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("821","201921"," Janner Joy Pimentel","","2023-02-13","13:22:00","14:02:38","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9514271502");
+INSERT INTO `inout` VALUES("822","202231"," Fiona Kylie Mae Nagera","","2023-02-13","13:25:39","14:18:13","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9272086972");
+INSERT INTO `inout` VALUES("823","150442"," Maricon Zantua","","2023-02-13","13:32:37","14:05:32","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9079304668");
+INSERT INTO `inout` VALUES("824","221292"," Jahaziel Ella","","2023-02-13","13:37:27","13:46:39","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("825","200553"," Nichole Nette Laceda","","2023-02-13","13:38:21","14:45:39","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("826","190035"," Kim Suria","","2023-02-13","13:39:41","15:26:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("827","202224"," Jane Nicolle Tanay","","2023-02-13","13:41:21","15:25:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("828","190521"," Geneva Villacarlos","","2023-02-13","13:41:35","15:25:46","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("829","221665"," Ira Nyca Noga","","2023-02-13","13:48:05","14:37:01","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("830","210316"," Donna Micaela Dela Peña","","2023-02-13","13:48:25","13:48:40","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9950551400");
+INSERT INTO `inout` VALUES("831","221657"," Jay Austria","","2023-02-13","13:49:55","14:23:57","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","639263911012");
+INSERT INTO `inout` VALUES("832","211715"," Ma Isabel Visitacion","","2023-02-13","13:50:41","15:33:24","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","639708265875");
+INSERT INTO `inout` VALUES("833","211872"," Realyn Clores","","2023-02-13","13:51:14","15:33:29","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9634462940");
+INSERT INTO `inout` VALUES("834","212329"," Marrinel Citon","","2023-02-13","13:51:34","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9634430215");
+INSERT INTO `inout` VALUES("835","211999"," Allyssa Jane Ricafort","","2023-02-13","13:51:40","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9630197470");
+INSERT INTO `inout` VALUES("836","212281"," Fatima Navales","","2023-02-13","13:52:48","15:33:11","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9636253447");
+INSERT INTO `inout` VALUES("837","190877"," Rhona Michaela Sarcedo","","2023-02-13","13:58:48","14:07:50","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("838","221958"," Abdel Ezekiel Pilapil","","2023-02-13","14:23:42","15:57:03","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("839","221406"," Franz Jade Payba","","2023-02-13","14:27:04","15:13:11","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9471444247");
+INSERT INTO `inout` VALUES("840","221509"," Kate Avril Salazar","","2023-02-13","14:27:19","15:12:55","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9636896841");
+INSERT INTO `inout` VALUES("841","222515"," Glezel Cielo","","2023-02-13","14:27:30","15:13:43","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9971201730");
+INSERT INTO `inout` VALUES("842","220876"," Arnold Depayso","","2023-02-13","14:27:48","15:13:28","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9489689284");
+INSERT INTO `inout` VALUES("843","221806"," Carleslie Suruiz","","2023-02-13","14:28:04","15:14:10","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9456427856");
+INSERT INTO `inout` VALUES("844","221769"," Mary Jean Barza","","2023-02-13","14:28:11","15:14:50","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9468144101");
+INSERT INTO `inout` VALUES("845","221713"," Vince Sebuguero","","2023-02-13","14:28:25","15:13:57","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9982720468");
+INSERT INTO `inout` VALUES("846","211017"," Levi Anne Pedernal","","2023-02-13","14:28:40","17:00:00","IN","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9363048959");
+INSERT INTO `inout` VALUES("847","221552"," Beverly Berbie","","2023-02-13","14:28:59","15:14:23","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9496319674");
+INSERT INTO `inout` VALUES("848","221531"," Angelika Jaica Colinares","","2023-02-13","14:29:12","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9354008731");
+INSERT INTO `inout` VALUES("849","181670"," Ezzabel Watanabe","","2023-02-13","14:30:39","15:33:32","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("850","223201"," Betty May Ledesma","","2023-02-13","14:32:05","14:51:21","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9468768884");
+INSERT INTO `inout` VALUES("851","221642"," John Michael Gasis","","2023-02-13","14:32:17","16:00:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("852","222773"," Airyll Abaño","","2023-02-13","14:32:18","14:39:18","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9381859596");
+INSERT INTO `inout` VALUES("853","223167"," Ivane Veyra","","2023-02-13","14:32:28","14:39:45","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9634831976");
+INSERT INTO `inout` VALUES("854","223493"," Mary Rose Guillines","","2023-02-13","14:32:33","14:40:12","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9099608310");
+INSERT INTO `inout` VALUES("855","223199"," Michaella Mae Rivera","","2023-02-13","14:32:50","14:51:27","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9617258965");
+INSERT INTO `inout` VALUES("856","221891"," Allyza Aborde","","2023-02-13","14:36:10","16:00:55","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("857","221177"," Lady Lyrencee Joy Avila","","2023-02-13","14:37:17","16:48:54","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("858","222974"," Jhon Mheayeer Estares","","2023-02-13","14:40:43","15:41:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("859","190820"," Richard Charles Tuazon","","2023-02-13","14:50:33","15:33:37","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("860","191380"," Pauline Jay Villaluz","","2023-02-13","14:50:47","15:33:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("861","192189"," Patricia Jane Vista","","2023-02-13","14:52:06","14:54:08","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("862","221929"," Cherry Joy Bas","","2023-02-13","14:55:15","16:01:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("863","192189"," Patricia Jane Vista","","2023-02-13","14:57:09","15:33:06","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("864","201930"," Erica Maigue","","2023-02-13","15:03:18","15:39:19","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9103099071");
+INSERT INTO `inout` VALUES("865","142203"," Justine Ocfemia","","2023-02-13","15:03:33","15:39:31","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9481019081");
+INSERT INTO `inout` VALUES("866","222063"," Chen-Chen Necesario","","2023-02-13","15:14:23","15:57:17","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("867","221548"," Marea Angela Meneses","","2023-02-13","15:14:29","15:15:04","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9701763501");
+INSERT INTO `inout` VALUES("868","221153"," Louie Martin España","","2023-02-13","15:15:23","15:22:42","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9300816399");
+INSERT INTO `inout` VALUES("869","191693"," Roselyn Asis","","2023-02-13","15:18:55","17:00:00","IN","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9636556204");
+INSERT INTO `inout` VALUES("870","180907"," Carmela Dating","","2023-02-13","15:19:10","17:00:00","IN","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9095882448");
+INSERT INTO `inout` VALUES("871","200978"," Hershey Ann Era","","2023-02-13","15:20:59","15:57:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("872","142078"," Janice Delmiguez","","2023-02-13","15:25:01","15:39:25","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9508670234");
+INSERT INTO `inout` VALUES("873","161288"," Aiona Mae Almoguera","","2023-02-13","15:35:07","15:50:44","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("874","221750"," Patrisha Mae Mendoza","","2023-02-13","15:36:51","15:56:57","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("875","202231"," Fiona Kylie Mae Nagera","","2023-02-13","15:37:57","16:28:27","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9272086972");
+INSERT INTO `inout` VALUES("876","151584"," Tristan Villaluna","","2023-02-13","15:38:02","16:28:31","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9955853050");
+INSERT INTO `inout` VALUES("877","200300"," Charles Jordan Bawanan","","2023-02-13","15:38:17","16:01:09","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("878","221999"," Jannah Allago","","2023-02-13","15:38:40","15:50:50","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("879","182273"," Warren Panotes","","2023-02-13","15:54:47","15:55:07","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9070653497");
+INSERT INTO `inout` VALUES("880","182223"," Diosa Joy Panotes","","2023-02-13","15:55:34","15:57:34","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9383482840");
+INSERT INTO `inout` VALUES("881","222063"," Chen-Chen Necesario","","2023-02-13","15:57:32","15:57:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("882","222312"," John Marc Ian Abasula","","2023-02-13","16:11:34","16:50:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("883","220772"," Jessa Marie Cornito","","2023-02-13","16:32:47","16:49:20","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("884","221532"," Aleyah Fornilos","","2023-02-13","16:39:21","16:57:01","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9091856420");
+INSERT INTO `inout` VALUES("885","221504"," Samantha Lizette Bayani","","2023-02-13","16:39:25","16:56:57","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9487394640");
+INSERT INTO `inout` VALUES("886","221017"," Daniela Mae Belga","","2023-02-13","16:43:20","17:05:48","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9101864417");
+INSERT INTO `inout` VALUES("887","221292"," Jahaziel Ella","","2023-02-13","16:43:30","16:49:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("888","220630"," Dherelyn Base","","2023-02-13","16:43:35","16:48:57","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("889","220670"," Chrystal Joyce Doctor","","2023-02-13","16:43:36","17:05:52","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9100367852");
+INSERT INTO `inout` VALUES("890","221010"," Arlene Barilea","","2023-02-13","16:43:51","17:05:35","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9061312811");
+INSERT INTO `inout` VALUES("891","220695"," Jerico Espina","","2023-02-13","16:44:07","17:05:57","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9071453771");
+INSERT INTO `inout` VALUES("892","161182"," Noren Palma","","2023-02-14","08:23:33","09:28:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("893","220747"," Jorem Laviña","","2023-02-14","08:23:39","09:26:49","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("894","210549"," Billy Peña","","2023-02-14","08:25:36","08:48:31","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9108185428");
+INSERT INTO `inout` VALUES("895","222724"," Michelle Grace Solares","","2023-02-14","08:25:59","08:48:46","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9706346634");
+INSERT INTO `inout` VALUES("896","150442"," Maricon Zantua","","2023-02-14","08:34:53","09:33:29","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9079304668");
+INSERT INTO `inout` VALUES("897","221510  "," Elisabet Belardo","","2023-02-14","08:37:27","17:00:00","IN","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9656377745");
+INSERT INTO `inout` VALUES("898","222292"," Maribeth Napili","","2023-02-14","08:48:03","09:41:42","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9701472326");
+INSERT INTO `inout` VALUES("899","200425"," Leiann Toyado","","2023-02-14","08:48:19","09:41:29","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9564760162");
+INSERT INTO `inout` VALUES("900","220918 "," Christito Garcia","","2023-02-14","08:57:12","10:17:00","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9519713638");
+INSERT INTO `inout` VALUES("901","211999"," Allyssa Jane Ricafort","","2023-02-14","09:23:20","10:40:58","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9630197470");
+INSERT INTO `inout` VALUES("902","220747"," Jorem Laviña","","2023-02-14","09:26:49","09:27:20","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("903","220747"," Jorem Laviña","","2023-02-14","09:27:20","09:27:34","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("904","212679"," Glen Alvyn Abina","","2023-02-14","09:34:46","15:41:18","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9366419483");
+INSERT INTO `inout` VALUES("905","152556"," Sarah Joy Ultra","","2023-02-14","09:38:13","10:44:30","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9294963865");
+INSERT INTO `inout` VALUES("906","152597"," Maria Carmela Villamora","","2023-02-14","09:38:31","10:45:17","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9208973981");
+INSERT INTO `inout` VALUES("907","210168"," Robelyn Bulatao","","2023-02-14","09:38:49","10:45:30","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9388270310");
+INSERT INTO `inout` VALUES("908","210647"," Kyla Olesco","","2023-02-14","09:39:07","10:44:45","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9773290144");
+INSERT INTO `inout` VALUES("909","210243"," April Joy Buensalida","","2023-02-14","09:39:34","09:39:57","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9350876255");
+INSERT INTO `inout` VALUES("910","210243"," April Joy Buensalida","","2023-02-14","09:40:09","10:45:00","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9350876255");
+INSERT INTO `inout` VALUES("911","201353"," Bea Ellyse De Luna","","2023-02-14","09:57:16","10:22:19","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9665313129");
+INSERT INTO `inout` VALUES("912","221479"," Dannika Lean Esplana","","2023-02-14","09:57:28","10:23:26","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9673315579");
+INSERT INTO `inout` VALUES("913","152546"," Yrah Leigh Dela Cruz","","2023-02-14","10:04:08","10:45:45","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9469916833");
+INSERT INTO `inout` VALUES("914","160319"," Jessica Kristel Celestino","","2023-02-14","10:15:00","10:23:38","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9273625318");
+INSERT INTO `inout` VALUES("915","221901"," Jesherel Albis","","2023-02-14","10:17:51","12:00:45","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("916","221929"," Cherry Joy Bas","","2023-02-14","10:18:47","13:07:14","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("917","221642"," John Michael Gasis","","2023-02-14","10:19:00","11:25:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("918","200300"," Charles Jordan Bawanan","","2023-02-14","10:19:40","12:00:33","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("919","210379"," Mark Balte","","2023-02-14","10:20:02","11:13:58","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9122013938");
+INSERT INTO `inout` VALUES("920","210179"," John Kenneth Elot","","2023-02-14","10:20:15","11:13:36","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9972044300");
+INSERT INTO `inout` VALUES("921","160319"," Jessica Kristel Celestino","","2023-02-14","10:23:52","10:24:10","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9273625318");
+INSERT INTO `inout` VALUES("922","221891"," Allyza Aborde","","2023-02-14","10:25:07","12:00:28","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("923","161186"," Bea Jeanne Fajardo","","2023-02-14","10:26:59","10:32:45","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("924","222871"," May Gabrielle Rodolfo","","2023-02-14","10:28:00","11:55:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("925","222870"," Alec Arrielle Orbista","","2023-02-14","10:28:04","11:55:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("926","210136"," Mariel Yarte","","2023-02-14","10:55:03","11:44:01","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9464145364");
+INSERT INTO `inout` VALUES("927","210180"," John Mark Timbal","","2023-02-14","10:55:17","11:44:49","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9274216670");
+INSERT INTO `inout` VALUES("928","210286"," Jenalyn Calnea","","2023-02-14","10:57:11","11:08:16","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9073424431");
+INSERT INTO `inout` VALUES("929","210158"," Ronalyn Pajarillo","","2023-02-14","10:59:28","11:08:32","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9978463554");
+INSERT INTO `inout` VALUES("930","200854"," Kayecelyn Baral","","2023-02-14","11:06:10","12:00:40","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9381854164");
+INSERT INTO `inout` VALUES("931","200951"," Mekol Quiñones","","2023-02-14","11:06:23","12:01:31","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","639636593885");
+INSERT INTO `inout` VALUES("932","200844"," Rea Jane Avilado","","2023-02-14","11:06:40","12:01:13","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9656253844");
+INSERT INTO `inout` VALUES("933","200878"," Marjorie Rafael","","2023-02-14","11:07:23","12:00:53","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9955400861");
+INSERT INTO `inout` VALUES("934","141108"," Danica Hernandez","","2023-02-14","11:07:38","11:44:29","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9637733649");
+INSERT INTO `inout` VALUES("935","211831"," Geramae Soterio","","2023-02-14","11:25:06","12:00:19","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9518782229");
+INSERT INTO `inout` VALUES("936","221642"," John Michael Gasis","","2023-02-14","11:25:15","11:25:43","OUT","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("937","221642"," John Michael Gasis","","2023-02-14","11:25:43","11:26:00","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("938","221901"," Jesherel Albis","","2023-02-14","12:00:45","13:07:58","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("939","200231"," Louie Mari Quiñones","","2023-02-14","13:00:40","13:02:44","OUT","","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9957957277");
+INSERT INTO `inout` VALUES("940","200231"," Louie Mari Quiñones","","2023-02-14","13:02:44","13:49:53","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9957957277");
+INSERT INTO `inout` VALUES("941","223487"," Jaime Manlangit Jr.","","2023-02-14","13:02:58","15:10:51","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9129007788");
+INSERT INTO `inout` VALUES("942","221929"," Cherry Joy Bas","","2023-02-14","13:07:14","00:00:00","IN","","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("943","221642"," John Michael Gasis","","2023-02-14","13:07:47","13:41:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("944","200300"," Charles Jordan Bawanan","","2023-02-14","13:08:14","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("945","221891"," Allyza Aborde","","2023-02-14","13:08:18","13:41:26","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("946","222641"," Laralyn Sta Ana","","2023-02-14","13:08:32","17:00:00","IN","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9075399376");
+INSERT INTO `inout` VALUES("947","224065"," Winona Manalo","","2023-02-14","13:08:46","17:00:00","IN","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9533361806");
+INSERT INTO `inout` VALUES("948","224060 "," Catherine Bandoquillo","","2023-02-14","13:09:11","17:00:00","IN","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9480354370");
+INSERT INTO `inout` VALUES("949","220950"," Venus Shane Sernal","","2023-02-14","13:14:18","13:24:53","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9653116209");
+INSERT INTO `inout` VALUES("950","220951"," Sandara Dacillo","","2023-02-14","13:14:37","13:25:08","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9513159514");
+INSERT INTO `inout` VALUES("951","200303"," Wesley Clacio","","2023-02-14","13:15:21","13:37:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("952","212092"," Shemril Kim Eleda","","2023-02-14","13:17:05","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("953","221901"," Jesherel Albis","","2023-02-14","13:41:38","13:41:51","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("954","222974"," Jhon Mheayeer Estares","","2023-02-14","13:45:47","15:13:57","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("955","200435"," Alyssa Abihay","","2023-02-14","13:48:49","15:14:10","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("956","221958"," Abdel Ezekiel Pilapil","","2023-02-14","13:49:19","17:01:37","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("957","200283"," Jan Benedict Mitch Almira","","2023-02-14","14:02:07","16:54:29","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("958","210214"," Riza Viojan","","2023-02-14","14:03:42","14:22:18","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","0951 763 6683");
+INSERT INTO `inout` VALUES("959","212560"," Catherine Joy Orit","","2023-02-14","14:04:12","14:22:30","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9129872179");
+INSERT INTO `inout` VALUES("960","192815"," Clarence Jethro Adea","","2023-02-14","14:11:31","14:25:59","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("961","221292"," Jahaziel Ella","","2023-02-14","14:23:37","15:48:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("962","221584"," Janel Senis","","2023-02-14","14:23:42","15:48:22","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("963","221177"," Lady Lyrencee Joy Avila","","2023-02-14","14:23:58","15:48:27","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("964","211439"," Ruby Joy Sarmiento","","2023-02-14","14:31:41","14:32:21","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9508849927");
+INSERT INTO `inout` VALUES("965","191001"," Muanira Gasanara","","2023-02-14","14:32:31","14:47:15","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("966","191715"," Yasmin Ampaso","","2023-02-14","14:32:45","14:47:21","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("967","202103"," Christine Peñaranda","","2023-02-14","14:34:25","15:39:04","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9074365987");
+INSERT INTO `inout` VALUES("968","190919"," Eliza Mae Gonzales","","2023-02-14","14:34:40","15:38:46","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9817272829");
+INSERT INTO `inout` VALUES("969","221739"," Shanelle Delos Santos","","2023-02-14","14:53:44","15:03:14","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9976234286");
+INSERT INTO `inout` VALUES("970","211121"," Grityl Shayne Marbella","","2023-02-14","14:55:15","14:56:10","OUT","MC MAIN LIBRARY","College of Education"," MC MAIN LIBRARY","","","","9164676156");
+INSERT INTO `inout` VALUES("971","220772"," Jessa Marie Cornito","","2023-02-14","15:28:15","17:00:00","IN","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("972","220630"," Dherelyn Base","","2023-02-14","15:35:15","15:48:39","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("973","212679"," Glen Alvyn Abina","","2023-02-14","15:41:32","15:54:32","OUT","MC MAIN LIBRARY","College of Business Administration and Accountancy"," MC MAIN LIBRARY","","","","9366419483");
+INSERT INTO `inout` VALUES("974","224023"," Lailanie Kate Tamondong","","2023-02-14","15:43:00","16:49:21","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("975","224078"," Allysa Paulite","","2023-02-14","15:43:19","16:49:39","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("976","224077"," Francesca Elaine Segundo","","2023-02-14","15:43:32","16:49:54","OUT","MC MAIN LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("977","201086"," Eunice Yebra","","2023-02-14","15:55:32","15:58:16","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("978","222871"," May Gabrielle Rodolfo","","2023-02-14","16:04:20","16:04:56","OUT","MC NURSING LIBRARY","College of Nursing and Midwifery","NURSING LIBRARY","","","","");
+INSERT INTO `inout` VALUES("979","180090"," Rose Marie Ablaneda","","2023-02-14","16:07:16","17:01:19","OUT","MC MAIN LIBRARY","College of Criminal Justice Education"," MC MAIN LIBRARY","","","","9475454770");
+
+
+
+
+
+CREATE TABLE `loc` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `loc` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+INSERT INTO loc VALUES("2","MC MAIN LIBRARY");
+INSERT INTO loc VALUES("3","MC HIGH SCHOOL LIBRARY");
+INSERT INTO loc VALUES("4","MC NURSING LIBRARY");
+INSERT INTO loc VALUES("5","MC GRADUTE SCHOOL LIBRARY");
+
+
+
+CREATE TABLE `log` (
+  `id` int NOT NULL,
+  `date` varchar(20) NOT NULL,
+  `time` varchar(20) NOT NULL,
+  `usertype` varchar(100) NOT NULL DEFAULT '',
+  `userid` varchar(20) NOT NULL,
+  `action` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO log VALUES("1","2022-11-24","06:34 AM","Master","4","Database Backup Done");
+INSERT INTO log VALUES("2","2022-11-24","06:34 AM","Admin","6","Database Backup Done");
+INSERT INTO log VALUES("3","2023-02-04","03:24 PM","Master","2","Database Backup Done");
+INSERT INTO log VALUES("4","2023-03-20","04:02 PM","Admin","7","Database Backup Done");
+INSERT INTO log VALUES("5","2023-04-19","03:51 PM","Admin","7","Database Backup Done");
+INSERT INTO log VALUES("6","2024-11-04","09:38 AM","Admin","4","Database Backup Done");
+INSERT INTO log VALUES("7","2025-09-11","10:25 AM","Master","2","Database Backup Done");
+
+
+
+CREATE TABLE `news` (
+  `id` int NOT NULL,
+  `edate` varchar(20) NOT NULL,
+  `nhead` varchar(50) NOT NULL,
+  `nbody` varchar(600) NOT NULL,
+  `nfoot` varchar(50) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `loc` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+
+
+
+CREATE TABLE `roles` (
+  `id` int NOT NULL,
+  `rname` varchar(30) NOT NULL,
+  `rdesc` varchar(100) NOT NULL,
+  `acc_code` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `rname` (`rname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO roles VALUES("1","Master","Superuser","INDEX;S01;A02;R01;N01;R01;");
+INSERT INTO roles VALUES("2","User","User Dashboard","U02;");
+INSERT INTO roles VALUES("3","Admin","Admin ","INDEX;R01;U02;U03;");
+
+
+
+CREATE TABLE `setup` (
+  `var` varchar(100) DEFAULT NULL,
+  `value` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO setup VALUES("cname","MABINI COLLEGE INC.");
+INSERT INTO setup VALUES("libtime","17:00:00");
+INSERT INTO setup VALUES("noname","STUDENT NO.");
+INSERT INTO setup VALUES("sessiontime","7200");
+INSERT INTO setup VALUES("banner","true");
+INSERT INTO setup VALUES("activedash","quote");
+
+
+
+CREATE TABLE `tmp1` (
+  `date` date NOT NULL,
+  `secs` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+CREATE TABLE `tmp2` (
+  `usn` varchar(30) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+CREATE TABLE `tmp3` (
+  `date` varchar(30) NOT NULL DEFAULT '',
+  `day` varchar(30) NOT NULL DEFAULT 'CURRENT_TIMESTAMP',
+  `loc` varchar(100) NOT NULL,
+  `category` varchar(100) DEFAULT NULL,
+  `num` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+CREATE TABLE `users` (
+  `id` int NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `fname` varchar(30) NOT NULL,
+  `pass` varchar(100) NOT NULL,
+  `role` int NOT NULL,
+  `active` int NOT NULL,
+  `llogin` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO users VALUES("1","master","Superuser","4f26aeafdb2367620a393c973eddbe8f8b846ebd","1","0","18/10/2018 09:10 AM");
+INSERT INTO users VALUES("2","admin","Rene Remoroza","9dbb62a6d3b126fd500dc657daa973db06d82fa6","1","1","18/10/2018 09:10 AM");
+INSERT INTO users VALUES("3","user","User","12dea96fec20593566ab75692c9949596833adc9","2","0","07/09/2019 23:09 PM");
+INSERT INTO users VALUES("4","mchs","Ericka Lopez","04c96a4006389436c1bfb53cf1190e5600e23693","3","1","03/02/2023 09:02 AM");
+INSERT INTO users VALUES("5","mc","MC LIBRARIES","759aef0b3f465fd351110892de74978feaca604a","2","1","03/02/2023 09:02 AM");
+INSERT INTO users VALUES("6","jv","John Virgel Lo","24e6c0b8698f3886690db7e0a647391aafc6761f","1","1","03/02/2023 14:02 PM");
+INSERT INTO users VALUES("7","Laurie","Garcia","c7273aa9909cd088bbb58ebe7a6ef3e656735e0a","3","1","10/02/2023 10:02 AM");
+INSERT INTO users VALUES("8","neroah","","3a5a6d7cf704bf5819365ad81d041121ae9ef990","3","1","10/02/2023 10:02 AM");
+INSERT INTO users VALUES("9","Joy","Janda","04c96a4006389436c1bfb53cf1190e5600e23693","3","1","02/06/2025 15:06 PM");
+INSERT INTO users VALUES("10","abrabacon","Juego","4db32399848cf91e397eceb2f058adc87e6b397c","3","1","04/09/2025 09:09 AM");
+INSERT INTO users VALUES("11","dhen","Rabino","04c96a4006389436c1bfb53cf1190e5600e23693","3","1","10/10/2025 10:10 AM");
+INSERT INTO users VALUES("12","yonice","Abogado","04c96a4006389436c1bfb53cf1190e5600e23693","3","1","10/10/2025 10:10 AM");
+INSERT INTO users VALUES("13","carol","Abarle","04c96a4006389436c1bfb53cf1190e5600e23693","3","1","10/10/2025 10:10 AM");
+INSERT INTO users VALUES("14","myla","belen","bb8b3ece0968df39ff1dbd17a9769f1b90b2aee7","3","1","10/10/2025 13:10 PM");
+INSERT INTO users VALUES("15","rene","remoroza","04c96a4006389436c1bfb53cf1190e5600e23693","3","1","10/10/2025 13:10 PM");
+

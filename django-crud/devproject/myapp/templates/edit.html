@@ -1,0 +1,68 @@
+<!--FOR EDITING-->
+{% extends "base.html" %}
+  
+{% block title %}Edit book{% endblock title %}
+  
+{% block content %}
+<div class="col-md-12">
+    <style>
+        .btn-purple {
+          background-color: purple;
+          color: white; 
+        }
+     </style>
+    <form method="POST" class="post-form" action="/update/{{book.id}}">  
+        {% csrf_token %}  
+        <div class="container">   
+            <div class="col-12">  
+                <h3>Update Details</h3>  
+            </div> 
+            <div class="mb-3"> 
+                <label>Title:</label>  
+                <input type="text" class="form-control" name="title" id="id_title" required maxlength="255" value="{{ book.title }}" />  
+            </div> 
+            <div class="mb-3"> 
+                <label>Author:</label>  
+                <input type="text" class="form-control" name="author" id="id_author" required maxlength="255" value="{{ book.author }}" />  
+            </div> 
+            <div class="mb-3"> 
+                <label>Genre:</label>  
+                <select class="form-control" name="genre" id="genre" required>
+                    <option value="Horror" {% if book.genre == 'Horror' %}selected{% endif %}>Horror</option>
+                    <option value="Romance" {% if book.genre == 'Romance' %}selected{% endif %}>Romance</option>
+                    <option value="Fiction" {% if book.genre == 'Fiction' %}selected{% endif %}>Fiction</option>
+                    <option value="Nonfiction" {% if book.genre == 'Nonfiction' %}selected{% endif %}>Nonfiction</option>
+                    <option value="Scifi" {% if book.genre == 'Scifi' %}selected{% endif %}>Scifi</option>
+                    <option value="YA" {% if book.genre == 'YA' %}selected{% endif %}>YA</option>
+                    <option value="Mystery" {% if book.genre == 'Mystery' %}selected{% endif %}>Mystery</option>
+                    <option value="Historical" {% if book.genre == 'Historical' %}selected{% endif %}>Historical</option>
+                    <option value="Memoir" {% if book.genre == 'Memoir' %}selected{% endif %}>Memoir</option>
+                </select>
+            </div> 
+            <div class="mb-3"> 
+                <label for="status">Status:</label>  
+                <select class="form-control" name="status" id="status" required>
+                    <!--option value="">Select Status</option-->
+                    <option value="Reading" {% if book.status == 'Reading' %}selected{% endif %}>Reading</option>
+                    <option value="Finished" {% if book.status == 'Finished' %}selected{% endif %}>Finished</option>
+                    <option value="Completed" {% if book.status == 'Completed' %}selected{% endif %}>Completed</option>
+                </select>
+            </div>  
+            <div class="mb-3"> 
+                <label>Rate:</label>  
+                <!--input type="number" class="form-control" name="rate" id="id_rate" required maxlength="15" value="{{ book.rate }}" /-->
+                <select class="form-control" name="rate" id="rate" required>
+                    <option value="Excellent" {% if book.rate == 'Excellent' %}selected{% endif %}>Excellent</option>
+                    <option value="Good" {% if book.rate == 'Good' %}selected{% endif %}>Good</option>
+                    <option value="Average" {% if book.rate == 'Average' %}selected{% endif %}>Average</option>
+                    <option value="Bad" {% if book.rate == 'Bad' %}selected{% endif %}>Bad</option>
+                    <option value="Terrible" {% if book.rate == 'Terrible' %}selected{% endif %}>Terrible</option>
+                </select>  
+            </div> 
+            <div class="mb-3"> 
+                <!--button type="submit" class="btn btn-success btn-lg">Update</button-->
+                <button type="submit" class="btn btn-purple btn-lg">Update</button>
+            </div> 
+        </div>  
+    </form>  
+{% endblock content %}  
